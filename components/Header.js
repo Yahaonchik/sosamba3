@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import WashingMachineAnimation from './WashingMachineAnimation'
-import { PHONE_TEL, PHONE_DISPLAY, PHONE_TEL_2, PHONE_DISPLAY_2 } from '../utils/contacts'
 import dynamic from 'next/dynamic'
+const WashingMachineAnimation = dynamic(() => import('./WashingMachineAnimation'), { ssr: false, loading: () => null })
+import { PHONE_TEL, PHONE_DISPLAY, PHONE_TEL_2, PHONE_DISPLAY_2 } from '../utils/contacts'
 const PhoneModal = dynamic(() => import('./PhoneModal'), { ssr: false })
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 479)
+      setIsMobile(window.innerWidth <= 767)
     }
 
     checkMobile()
@@ -27,7 +27,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  // Проверяем, является ли текущая страница страницей статей или проблемы
+  // Проверяем, является ли теку��ая страница страницей статей или проблемы
   const isArticlesPage = router.pathname === '/articles' || (router.pathname && (
     router.pathname.includes('NESLIVAETIVODU') ||
     router.pathname.includes('NEGREETIVODU') ||
@@ -51,11 +51,13 @@ const Header = () => {
         <header className="frame1196-container101">
           <div className="frame1196-container102">
             <div className="frame1196-container103">
-              <WashingMachineAnimation
-                className="frame1196-image10"
-                width={isMobile ? 141 : 95}
-                height={isMobile ? 141 : 92}
-              />
+              {!isMobile && (
+                <WashingMachineAnimation
+                  className="frame1196-image10"
+                  width={95}
+                  height={92}
+                />
+              )}
               <Link href="/">
                 <span className="frame1196-text100 clickable-title">
                   <span
