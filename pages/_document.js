@@ -28,10 +28,16 @@ class CustomDocument extends Document {
           <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" href="/favicon.svg" />
           <meta name="theme-color" content="#4EC8ED" />
+          <link rel="preload" as="style" href="/style.css" />
+          <link rel="stylesheet" href="/style.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/style.css" /></noscript>
           <style
             dangerouslySetInnerHTML={{
               __html: `
-                /* Critical CSS for above-the-fold card titles */
+                /* Critical CSS for above-the-fold hero + cards */
+                .frame1196-container111{position:relative;overflow:hidden}
+                .frame1196-hero-bg{position:absolute;inset:0}
+                .frame1196-container112{position:relative;padding:16px}
                 .frame1196-cards{display:grid;gap:16px}
                 .frame1196-text112,.frame1196-text113,.frame1196-text114,.frame1196-text115,
                 .frame1196-text116,.frame1196-text117,.frame1196-text118,.frame1196-text119,

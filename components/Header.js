@@ -14,7 +14,7 @@ const Header = () => {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 767)
+      setIsMobile(window.innerWidth <= 479)
     }
 
     checkMobile()
@@ -51,13 +51,11 @@ const Header = () => {
         <header className="frame1196-container101">
           <div className="frame1196-container102">
             <div className="frame1196-container103">
-              {!isMobile && (
-                <WashingMachineAnimation
-                  className="frame1196-image10"
-                  width={95}
-                  height={92}
-                />
-              )}
+              <WashingMachineAnimation
+                className="frame1196-image10"
+                width={isMobile ? 141 : 95}
+                height={isMobile ? 141 : 92}
+              />
               <Link href="/">
                 <span className="frame1196-text100 clickable-title">
                   <span

@@ -1,5 +1,4 @@
 import '../styles/teleporthq.css';
-import './style.css';
 import GoogleAnalytics from '../components/GoogleAnalytics';
 import SiteTagline from '../components/SiteTagline';
 import { nunito, roboto } from '../utils/fonts';
