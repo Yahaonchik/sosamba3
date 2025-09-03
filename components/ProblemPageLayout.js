@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Header from './Header'
 import MainFooter from './MainFooter'
@@ -29,6 +30,11 @@ const ProblemPageLayout = ({
   return (
     <div className="page-container10">
       <SEOHead {...seo} />
+      <Head>
+        <link rel="preload" as="style" href="/problem-pages.css" />
+        <link rel="stylesheet" href="/problem-pages.css" media="print" onLoad="this.media='all'" />
+        <noscript><link rel="stylesheet" href="/problem-pages.css" /></noscript>
+      </Head>
       <Header />
       <div className="page-breadcrumbs-section">
         <Breadcrumbs style="white-left" />

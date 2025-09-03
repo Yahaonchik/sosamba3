@@ -28,6 +28,18 @@ class CustomDocument extends Document {
           <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" href="/favicon.svg" />
           <meta name="theme-color" content="#4EC8ED" />
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
+                /* Critical CSS for above-the-fold card titles */
+                .frame1196-cards{display:grid;gap:16px}
+                .frame1196-text112,.frame1196-text113,.frame1196-text114,.frame1196-text115,
+                .frame1196-text116,.frame1196-text117,.frame1196-text118,.frame1196-text119,
+                .frame1196-text120,.frame1196-text121{color:#fff;font-family:var(--font-nunito)}
+              `,
+            }}
+            data-tag="critical-style-sheet"
+          />
         </Head>
         <body>
           <Main></Main>
