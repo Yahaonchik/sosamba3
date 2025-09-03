@@ -144,9 +144,7 @@ const Frame1196 = (props) => {
                     ></path>
                   </svg>
                 </div>
-                <div className="frame1196-image15">{typeof window === 'undefined' ? null : (window.innerWidth > 991 && (
-                  <Image alt="Стиральная ��ашина не сливает воду" src="/problems 2/11-300h.webp" fill sizes="149px" quality={60} style={{ objectFit: 'cover' }} />
-                ))}</div>
+                <div className="frame1196-image15"><Image alt="Стиральная ��ашина не сливает воду" src="/problems 2/11-300h.webp" fill sizes="149px" quality={60} priority style={{ objectFit: 'cover' }} /></div>
               </a>
             </Link>
             <Link legacyBehavior href="/negreetvodu">
@@ -167,7 +165,7 @@ const Frame1196 = (props) => {
                     ></path>
                   </svg>
                 </div>
-                <div className="frame1196-image16"><Image alt="Ст����альная машина не нагревает воду" src="/problems 2/21-300h.webp" fill sizes="149px" quality={60} loading="lazy" style={{ objectFit: 'cover' }} /></div>
+                <div className="frame1196-image16"><Image alt="Ст�����альная машина не нагревает воду" src="/problems 2/21-300h.webp" fill sizes="149px" quality={60} priority style={{ objectFit: 'cover' }} /></div>
               </a>
             </Link>
             <Link legacyBehavior href="/protekaet">
@@ -186,7 +184,7 @@ const Frame1196 = (props) => {
                     ></path>
                   </svg>
                 </div>
-                <div className="frame1196-image17"><Image alt="Ст���ральная машина протекает" src="/problems 2/31-300h.webp" fill sizes="149px" quality={60} loading="lazy" style={{ objectFit: 'cover' }} /></div>
+                <div className="frame1196-image17"><Image alt="Ст���ральная машина протекает" src="/problems 2/31-300h.webp" fill sizes="149px" quality={60} priority style={{ objectFit: 'cover' }} /></div>
               </a>
             </Link>
             <Link legacyBehavior href="/silnoshumit">
@@ -207,7 +205,7 @@ const Frame1196 = (props) => {
                     ></path>
                   </svg>
                 </div>
-                <div className="frame1196-image18"><Image alt="��тиральн��я машина шумит при отжиме" src="/problems/4-300h.webp" fill sizes="149px" quality={60} loading="lazy" style={{ objectFit: 'cover' }} /></div>
+                <div className="frame1196-image18"><Image alt="��тиральн��я машина шумит при отжиме" src="/problems/4-300h.webp" fill sizes="149px" quality={60} priority style={{ objectFit: 'cover' }} /></div>
               </a>
             </Link>
             <Link legacyBehavior href="/nevkluchaetsa">
@@ -896,7 +894,7 @@ const Frame1196 = (props) => {
               text={
                 <Fragment>
                   <span className="frame1196-text167">
-                    <span>Ремо��т сливного ���асоса</span>
+                    <span>Ремо��т сл��вного ���асоса</span>
                   </span>
                 </Fragment>
               }
@@ -1025,7 +1023,7 @@ const Frame1196 = (props) => {
               text={
                 <Fragment>
                   <span className="frame1196-text183">
-                    <span>Заме��а щеток двигателя (с учетом стоимо����ти щеток)</span>
+                    <span>Заме��а щеток двигателя (с учетом стоимо����ти ��еток)</span>
                   </span>
                 </Fragment>
               }
@@ -1467,7 +1465,7 @@ const Frame1196 = (props) => {
               </div>
               <div className="item">
                 <Image
-                  alt="Ремонт стираль��ых машин Bosch в ��дессе - профессиональный сервис"
+                  alt="Ремонт стираль��ых машин Bosch �� ��дессе - профессиональный сервис"
                   src="/brands/bosch-logo%202-200h.webp"
                   loading="eager"
                   className="frame1196-image34"
@@ -1599,7 +1597,7 @@ const Frame1196 = (props) => {
               </div>
               <div className="item">
                 <Image
-                  alt="Ремонт стиральных ��ашин LG в Одессе - профессиона��ьный сервис"
+                  alt="Ремонт стиральных ��ашин LG в Одессе - профессиона����ьный сервис"
                   src="/brands/lg-logo%201-200h.webp"
                   loading="eager"
                   className="frame1196-image45"
@@ -3366,7 +3364,7 @@ const Frame1196 = (props) => {
             </span>
           </div>
           <p className="frame1196-text251 textITOGI">
-            <span>Стира��ьная машина — ��ехника, которая должна работать исправно: отжимать, стирать и радовать стабильностью. Но на практике даже самая надёжная техника со времене�� тре��ует внимания. Механические детали изнашиваются, электроника даёт сбои, а бытовая на��рузка делает своё дело. Поэтому ремонт стиральн��х ма��ин в Одессе — не разовая услуга, а реа��ьная необходимость для многих владельцев. Важно доверить ремонт проверен��ым спе��иалистам, а не случайному мастеру.</span>
+            <span>Стира��ьная машина — ��ехника, которая должна работать исправно: отжимать, стирать и радовать стабильностью. Но на практике даже самая надёжная техника со времене�� тре��ует внимания. Механические детали изнашиваются, электроника даёт сбои, а бытовая на��рузка делает своё дело. Поэтому ремонт стиральн��х ма��ин в Одессе — не разовая услуга, а реа��ьная необходимость для многих владельцев. Важно доверить ремон�� проверен��ым спе��иалистам, а не ��лучайному мастеру.</span>
           </p>
           <p className="frame1196-text252 textITOGI">
             <span>Под брендом "Ваше назван��е" работает команда мастеров, каждый из которых занимается ремонтом стирал��ных м��шин более с��ми лет. Мы обучались у лучших, прошли сертификацию, посещали техку��сы и накопили опыт р��боты с техникой разных поколений. ��егодня мы предлаг��ем ремонт стиральных машин в Одессе с гарантией, использованием оригинальных запчастей и вним��нием к ��аждой детали. В нашем распоряжении — профессио��ально оснащённая мастерская, склад комплекту��щих и выездной сервис. Мы находим даже редкие детали и точно знаем, как продлить жизнь вашей технике.</span>
@@ -3427,7 +3425,7 @@ const Frame1196 = (props) => {
           <p className="frame1196-text260 textITOGI">
             <span
               dangerouslySetInnerHTML={{
-                __html: 'Ремонт стиральных машин в Одессе необходим как новым, так и давно использованным моделям. Все уз��ы техники имею�� ограниченный ре��урс, и при активной эксплуатации однажды выходят из строя. Мы собрали самые частые п��ичины, по к��торым клиенты обращаются в наш сервис:',
+                __html: 'Ремонт стиральных машин в Одессе необходим как новым, так и давно использованным моделям. Все уз��ы техники имею�� ограниченный ре��урс, и при активной эксплуатации однажды выходят из строя. Мы собрали самые час��ые п��ичины, по к��торым клиенты обращаются в наш сервис:',
               }}
             ></span>
           </p>
@@ -3454,7 +3452,7 @@ const Frame1196 = (props) => {
               <span className="textITOGI">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Не запускается стирка — проверяем модуль управления или кнопку питания.',
+                    __html: 'Не запускается стирка — прове��яем модуль управления или кнопку питания.',
                   }}
                 ></span>
               </span>
@@ -3507,7 +3505,7 @@ const Frame1196 = (props) => {
           </h2>
           <p className="frame1196-text271 textITOGI">
             <span>
-              Сервисный ц��нтр "Ваше название" — это современная профессиональная мастерска���� в Одессе, где в���п��лняются все виды ремонта: от быстрой замены деталей до полного восстановл��ния после серьёзных поломок. Мы берёмс�� за любую технику: от массовых моделей до премиум-сегмента. Выполняем замену амортизаторов, подшипников, сливных насосов, управляющих модулей, датчиков, ТЭ��ов. Также восстанавливаем герметичность, ��еняем л��ки, устраняем вибрации и посто��онние шумы. Прово��им профилактику и глубокую чистку барабана и бака. Каждый ремонт начинается с диагностики — ма��тер объясняет, в чём проблема, и предлагает решение. Только по���ле согласования с клиентом мы приступаем к работе. Мы ц��ним довери�� и работаем аккуратно — б��з спешки и халтуры.
+              Сервисный ц��нтр "Ваше название" — это современная профессиональная мастерска���� в Одессе, где в���п��лняются все виды ремонта: от б��строй замены деталей до полного восстановл��ния после серьёзных поломок. Мы берёмс�� за любую технику: от массовых моделей до премиум-сегмента. Выполняем замену амортизаторов, подшипников, сливных насосов, управляющих модулей, датчиков, ТЭ��ов. Также восстанавливаем герметичность, ��еняем л��ки, устраняем вибрации и посто��онние шумы. Прово��им профилактику и глубокую чистку барабана и бака. Каждый ремонт начинается с диагностики — ма��тер объясняет, в чём проблема, и предлагает решение. Только по���ле согласования с клиентом мы приступаем к работе. Мы ц��ним довери�� и работаем аккуратно — б��з спешки и халтуры.
             </span>
           </p>
           <h2 className="textglavitogi">
@@ -9193,70 +9191,70 @@ const Frame1196 = (props) => {
               box-shadow: none;
             }
             .frame1196-text112 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container114 {
               box-shadow: none;
             }
             .frame1196-text113 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container115 {
               box-shadow: none;
             }
             .frame1196-text114 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container116 {
               box-shadow: none;
             }
             .frame1196-text115 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container117 {
               box-shadow: none;
             }
             .frame1196-text116 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container118 {
               box-shadow: none;
             }
             .frame1196-text117 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container119 {
               box-shadow: none;
             }
             .frame1196-text118 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container120 {
               box-shadow: none;
             }
             .frame1196-text119 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container121 {
               box-shadow: none;
             }
             .frame1196-text120 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container122 {
               box-shadow: none;
             }
             .frame1196-text121 {
-              font-size: 16;
+              font-size: 18px;
               font-family: var(--font-nunito);
             }
             .frame1196-container123 {
@@ -11430,7 +11428,7 @@ const Frame1196 = (props) => {
               color: #87ceeb !important;
             }
 
-            /* Активное состояние навигации на м��бильных */
+            /* Активное состояние навигации на м����бильных */
             .frame1196-nav-active {
               color: #87ceeb !important;
             }
