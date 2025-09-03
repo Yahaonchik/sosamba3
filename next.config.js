@@ -1,10 +1,3 @@
-const isAnalyze = process.env.ANALYZE === 'true'
-
-const baseConfig = {}
-
-if (isAnalyze) {
-  const withBundleAnalyzer = require('@next/bundle-analyzer')({ enabled: true })
-  module.exports = withBundleAnalyzer(baseConfig)
-} else {
-  module.exports = baseConfig
-}
+/** Simplified Next.js config without bundle analyzer to avoid client-side fs/child_process errors */
+const nextConfig = {}
+module.exports = nextConfig
