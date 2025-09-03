@@ -21,7 +21,5 @@
   "engines": {
     "node": ">=18.x"
   },
-  "devDependencies": {
-    "@next/bundle-analyzer": "13.4.12"
-  }
+  "devDependencies": {}
 }
