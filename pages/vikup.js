@@ -574,7 +574,7 @@ const Vikup = (props) => {
           <div className="page1-container28">
             <span className="page1-text44">До 10 лет</span>
             <div className="page1-container29">
-              <p className="page1-text45">О�� 500 до 1000 грн</p>
+              <p className="page1-text45">От 500 до 1000 грн</p>
               <svg
                 width="100%"
                 xmlns="http://www.w3.org/2000/svg"
@@ -607,7 +607,7 @@ const Vikup = (props) => {
               </svg>
               <div className="page1-container30 clickable-button" onClick={openSellModal}>
                 <div className="page1-container31">
-                  <span className="page1-text46">Продат��</span>
+                  <span className="page1-text46">Продать</span>
                 </div>
                 <img alt="image" src="/ICONS/29.svg" loading="eager" className="page1-image7" />
               </div>
@@ -649,7 +649,7 @@ const Vikup = (props) => {
               </svg>
               <div className="page1-container34 clickable-button" onClick={openSellModal}>
                 <div className="page1-container35">
-                  <span className="page1-text49">Продат��</span>
+                  <span className="page1-text49">Продать</span>
                 </div>
                 <img alt="image" src="/ICONS/29.svg" loading="eager" className="page1-image8" />
               </div>
@@ -874,13 +874,20 @@ const Vikup = (props) => {
             color: #000000;
             width: 100%;
             height: auto;
-            font-size: 1em;
+            font-size: 15px;
             max-width: 150px;
             font-style: normal;
             max-height: 35px;
             min-height: 35px;
             font-family: var(--font-nunito);
             font-weight: 500;
+            line-height: normal;
+            white-space: normal;
+            overflow-wrap: break-word;
+            letter-spacing: normal;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
           }
           .page1-icon10 {
             width: 100px;
@@ -931,13 +938,20 @@ const Vikup = (props) => {
             color: #000000;
             width: 100%;
             height: auto;
-            font-size: 1em;
+            font-size: 15px;
             max-width: 150px;
             font-style: normal;
             max-height: 35px;
             min-height: 35px;
             font-family: var(--font-nunito);
             font-weight: 500;
+            line-height: normal;
+            white-space: normal;
+            overflow-wrap: break-word;
+            letter-spacing: normal;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
           }
           .page1-icon16 {
             width: 100px;
@@ -988,13 +1002,20 @@ const Vikup = (props) => {
             color: #000000;
             width: 100%;
             height: auto;
-            font-size: 1em;
+            font-size: 15px;
             max-width: 150px;
             font-style: normal;
             max-height: 35px;
             min-height: 35px;
             font-family: var(--font-nunito);
             font-weight: 500;
+            line-height: normal;
+            white-space: normal;
+            overflow-wrap: break-word;
+            letter-spacing: normal;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
           }
           .page1-icon22 {
             width: 100px;
@@ -1143,7 +1164,7 @@ const Vikup = (props) => {
           .page1-text41 {
             fill: #ffd84d;
             color: #ffd84d;
-            font-size: 22px;
+            font-size: 16px;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
@@ -1160,31 +1181,36 @@ const Vikup = (props) => {
             justify-content: center;
           }
           .page1-text42 {
-            font-size: 17px;
-            font-style: normal;
+            color: #333333;
+            font-size: 14.5px;
+            font-style: italic;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 300;
+            line-height: 1.3;
           }
           .page1-icon44 {
             width: 100px;
             height: 5px;
           }
           .page1-container26 {
-            gap: var(--dl-layout-space-halfunit);
+            gap: 4px;
             flex: 0 0 auto;
             width: auto;
             height: auto;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             flex-direction: row-reverse;
             justify-content: flex-start;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            border-radius: 4px;
+            padding: 4px;
           }
-          .page1-container26:hover {
-            transform: scale(1.05);
-          }
+          .page1-container26:hover { transform: translateY(-2px); }
+          .page1-container26:hover .page1-image6 { transform: rotate(15deg); filter: brightness(1.2); }
+          .page1-container26:hover .page1-text43 { color: #3A9BC1; }
+          .page1-container26:active { transform: translateY(0); }
           .page1-container27 {
             display: flex;
             align-items: flex-start;
@@ -1193,10 +1219,10 @@ const Vikup = (props) => {
           .page1-text43 {
             color: #4ec8ed;
             font-family: var(--font-nunito);
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 400;
-            line-height: 1.15;
-            letter-spacing: 1.5px;
+            line-height: 1;
+            text-align: center;
           }
           .page1-image6 {
             width: 22px;
@@ -1275,7 +1301,7 @@ const Vikup = (props) => {
           }
           .page1-text44 {
             color: #5dc4e9;
-            font-size: 22px;
+            font-size: 16px;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
@@ -1292,31 +1318,36 @@ const Vikup = (props) => {
             justify-content: center;
           }
           .page1-text45 {
-            font-size: 17px;
-            font-style: normal;
+            color: #333333;
+            font-size: 14.5px;
+            font-style: italic;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 300;
+            line-height: 1.3;
           }
           .page1-icon66 {
             width: 100px;
             height: 5px;
           }
           .page1-container30 {
-            gap: var(--dl-layout-space-halfunit);
+            gap: 4px;
             flex: 0 0 auto;
             width: auto;
             height: auto;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             flex-direction: row-reverse;
             justify-content: flex-start;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            border-radius: 4px;
+            padding: 4px;
           }
-          .page1-container30:hover {
-            transform: scale(1.05);
-          }
+          .page1-container30:hover { transform: translateY(-2px); }
+          .page1-container30:hover .page1-image7 { transform: rotate(15deg); filter: brightness(1.2); }
+          .page1-container30:hover .page1-text46 { color: #3A9BC1; }
+          .page1-container30:active { transform: translateY(0); }
           .page1-container31 {
             display: flex;
             align-items: flex-start;
@@ -1326,10 +1357,10 @@ const Vikup = (props) => {
             fill: #4ec8ed;
             color: #4ec8ed;
             font-family: var(--font-nunito);
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 400;
-            line-height: 1.15;
-            letter-spacing: 1.5px;
+            line-height: 1;
+            text-align: center;
           }
           .page1-image7 {
             width: 22px;
@@ -1351,7 +1382,7 @@ const Vikup = (props) => {
             background-color: #fdfdf6;
           }
           .page1-text47 {
-            font-size: 22px;
+            font-size: 16px;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
@@ -1368,31 +1399,36 @@ const Vikup = (props) => {
             justify-content: center;
           }
           .page1-text48 {
-            font-size: 17px;
-            font-style: normal;
+            color: #333333;
+            font-size: 14.5px;
+            font-style: italic;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 300;
+            line-height: 1.3;
           }
           .page1-icon72 {
             width: 100px;
             height: 5px;
           }
           .page1-container34 {
-            gap: var(--dl-layout-space-halfunit);
+            gap: 4px;
             flex: 0 0 auto;
             width: auto;
             height: auto;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             flex-direction: row-reverse;
             justify-content: flex-start;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            border-radius: 4px;
+            padding: 4px;
           }
-          .page1-container34:hover {
-            transform: scale(1.05);
-          }
+          .page1-container34:hover { transform: translateY(-2px); }
+          .page1-container34:hover .page1-image8 { transform: rotate(15deg); filter: brightness(1.2); }
+          .page1-container34:hover .page1-text49 { color: #3A9BC1; }
+          .page1-container34:active { transform: translateY(0); }
           .page1-container35 {
             display: flex;
             align-items: flex-start;
@@ -1402,10 +1438,10 @@ const Vikup = (props) => {
             fill: #4ec8ed;
             color: #4ec8ed;
             font-family: var(--font-nunito);
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 400;
-            line-height: 1.15;
-            letter-spacing: 1.5px;
+            line-height: 1;
+            text-align: center;
           }
           .page1-image8 {
             width: 22px;
