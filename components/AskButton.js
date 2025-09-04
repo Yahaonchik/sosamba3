@@ -17,13 +17,14 @@ const AskButton = ({ onClick, className = '', variant = 'primary' }) => {
         {`
           .ask-button {
             color: rgb(255, 255, 255);
-            font-size: 16px;
+            font-size: 15px;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1.5px;
             border: none;
             border-radius: 8px;
-            letter-spacing: 1px;
             background-color: rgb(40, 40, 40);
             cursor: pointer;
             transition: all 0.3s ease;

@@ -1193,6 +1193,10 @@ const Vikup = (props) => {
           .page1-text43 {
             color: #4ec8ed;
             font-family: var(--font-nunito);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1.5px;
           }
           .page1-image6 {
             width: 22px;
@@ -1322,6 +1326,10 @@ const Vikup = (props) => {
             fill: #4ec8ed;
             color: #4ec8ed;
             font-family: var(--font-nunito);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1.5px;
           }
           .page1-image7 {
             width: 22px;
@@ -1394,6 +1402,10 @@ const Vikup = (props) => {
             fill: #4ec8ed;
             color: #4ec8ed;
             font-family: var(--font-nunito);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1.5px;
           }
           .page1-image8 {
             width: 22px;

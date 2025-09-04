@@ -123,7 +123,7 @@ const Header = () => {
             </div>
             <div className="frame1196-telephonadres">
               <div className="frame1196-container108">
-                <button type="button" aria-label={`Открыть контакты ${PHONE_DISPLAY}`} className="phone-link" onClick={() => setPhoneOpen(true)}>
+                <button type="button" aria-label={`Отк��ыть контакты ${PHONE_DISPLAY}`} className="phone-link" onClick={() => setPhoneOpen(true)}>
                   <img
                     alt="Позвонить"
                     src="/ICONS/dla%20hedera%20trubka.svg"
@@ -290,8 +290,11 @@ const Header = () => {
           /* Глобальные стили для принуждения цвета в sidebar */
           .frame1196-sidebar-nav a {
             color: white !important;
-            font-family: var(--font-roboto), sans-serif !important;
+            font-family: var(--font-nunito), sans-serif !important;
             font-weight: 400 !important;
+            font-size: 14px !important;
+            line-height: 1.15 !important;
+            letter-spacing: 1px !important;
           }
           .frame1196-sidebar-nav a.frame1196-sidebar-link-active {
             color: #87ceeb !important;
@@ -479,7 +482,7 @@ const Header = () => {
             background-color: #87ceeb;
           }
 
-          /* Основные стили хедера */
+          /* Основные стили хедер�� */
           .frame1196-container101 {
             width: 100%;
             height: auto;
@@ -600,8 +603,11 @@ const Header = () => {
           }
           .frame1196-text101 {
             color: #ffffff;
-            font-size: 15px;
-            font-family: var(--font-roboto);
+            font-size: 14px;
+            font-family: var(--font-nunito);
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1px;
           }
           .frame1196-container106 {
             flex: 0 0 auto;
@@ -615,8 +621,11 @@ const Header = () => {
           }
           .frame1196-text102 {
             color: rgb(255, 255, 255);
-            font-size: 15px;
-            font-family: var(--font-roboto);
+            font-size: 14px;
+            font-family: var(--font-nunito);
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1px;
           }
           .frame1196-container107 {
             flex: 0 0 auto;
@@ -630,8 +639,11 @@ const Header = () => {
           }
           .frame1196-text103 {
             color: rgb(255, 255, 255);
-            font-size: 15px;
-            font-family: var(--font-roboto);
+            font-size: 14px;
+            font-family: var(--font-nunito);
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1px;
           }
           .frame1196-telephonadres {
             gap: var(--dl-layout-space-oneandhalfunits);
@@ -858,9 +870,11 @@ const Header = () => {
           .frame1196-sidebar-link {
             color: white !important;
             text-decoration: none !important;
-            font-size: 15px;
-            font-family: var(--font-roboto);
+            font-size: 14px;
+            font-family: var(--font-nunito);
             font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1px;
             padding: 15px 20px;
             border-radius: 8px;
             background-color: rgba(46, 51, 55, 0.41);
@@ -990,7 +1004,7 @@ const Header = () => {
             font-weight: 300;
           }
 
-          /* Медиа-запросы */
+          /* Меди��-запросы */
           @media (max-width: 1700px) {
             .frame1196-korobki {
               display: none;

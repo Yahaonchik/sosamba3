@@ -17,13 +17,17 @@ const OrderButton = ({ onClick, className = '', variant = 'primary', text = 'Ð—Ð
         {`
           .order-button {
             color: rgb(255, 255, 255);
-            font-size: 16px;
+            font-size: 15px;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: 1.5px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
             border: none;
             border-radius: 8px;
-            letter-spacing: 1px;
             background-color: rgb(40, 40, 40);
             cursor: pointer;
             transition: all 0.3s ease;
@@ -33,12 +37,12 @@ const OrderButton = ({ onClick, className = '', variant = 'primary', text = 'Ð—Ð
 
           .order-button.primary {
             width: 100%;
-            height: 100%;
+            height: 60px;
             max-width: 350px;
             min-width: 180px;
             box-shadow: 5px 5px 10px 0px rgba(43, 43, 43, 0.68);
             max-height: 60px;
-            min-height: 55px;
+            min-height: 60px;
           }
 
           .order-button.footer {
