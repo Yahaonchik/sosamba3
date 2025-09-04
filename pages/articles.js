@@ -29,7 +29,7 @@ const Articles = (props) => {
     { title: 'Стиральная машина протекает', href: '/protekaet', image: '/problems 2/31-300h.webp', alt: 'Стир��льная машина протекает' },
     { title: 'Стиральная машина шумит при отжиме', href: '/silnoshumit', image: '/problems/4-300h.webp', alt: 'Стиральн��я машина шумит при отжиме' },
     { title: 'Стиральная машина не включается', href: '/nevkluchaetsa', image: '/problems 2/51-300h.webp', alt: 'Стиральная машина не включается' },
-    { title: 'Стиральная машина зависает на программе', href: '/zavisaetnaprogramme', image: '/problems 2/61-300h.webp', alt: 'Стиральная машина зависает на программе' },
+    { title: 'Стиральная машина зависает на программе', href: '/zavisaetnaprogramme', image: '/problems 2/61-300h.webp', alt: 'Стиральная машина зависает на про��рамме' },
     { title: 'Стиральная машина не отжимает', href: '/neotjimaet', image: '/problems 2/71-300h.webp', alt: 'Стиральная машина не отжимает' },
     { title: 'Стиральная машина не набирае�� воду', href: '/nenabiraetvodu', image: '/problems/8-300h.webp', alt: 'Стиральная машина не набирает воду' },
     { title: 'У стиральной машины не открывается дверца', href: '/neotkrivaetsadverca', image: '/problems 2/91-300h.webp', alt: 'Не открывается дверца стиральной машины' },
@@ -144,7 +144,7 @@ const Articles = (props) => {
           .articles-hero-content { max-width: 800px; margin: 0 auto; }
           .articles-title { font-size: 35px; font-family: var(--font-nunito), sans-serif; font-weight: 500; margin-bottom: 16px; text-align: center; }
           .articles-title-blue { color: #87ceeb; font-weight: 600; }
-          .articles-title-black { color: #000000; }
+          .articles-title-black { color: var(--dl-color-theme-neutral-dark); }
           .articles-subtitle { font-size: 0.9rem; opacity: 0.9; font-family: var(--font-nunito), sans-serif; line-height: 1.6; color: #333333; }
 
           /* Tabs */

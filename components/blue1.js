@@ -284,7 +284,10 @@ const Blue1 = ({ rootClassName = '', text3, text, text2, imageSrc = '/ICONS/29.s
               font-size: 15px;
               font-style: normal;
               font-family: var(--font-nunito);
-              font-weight: 400;
+              font-weight: 400 !important;
+              line-height: 1;
+              letter-spacing: normal;
+              text-transform: none;
               overflow-wrap: break-word;
             }
             .blue1-container3 {
@@ -301,6 +304,8 @@ const Blue1 = ({ rootClassName = '', text3, text, text2, imageSrc = '/ICONS/29.s
               width: 100%;
               height: 100%;
               display: flex;
+              align-items: center;
+              min-height: 31px;
               font-size: 16px;
               font-style: normal;
               text-align: center;

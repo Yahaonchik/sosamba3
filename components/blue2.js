@@ -293,7 +293,10 @@ const Blue2 = ({ text3, imageAlt = 'image', text, text2, text1, imageSrc = '/ICO
               min-width: 115px;
               font-style: normal;
               font-family: var(--font-nunito);
-              font-weight: 400;
+              font-weight: 400 !important;
+              line-height: 1;
+              letter-spacing: normal;
+              text-transform: none;
               overflow-wrap: break-word;
             }
             .blue2-container3 {
@@ -310,6 +313,8 @@ const Blue2 = ({ text3, imageAlt = 'image', text, text2, text1, imageSrc = '/ICO
               width: 100%;
               height: 100%;
               display: flex;
+              align-items: center;
+              min-height: 31px;
               font-size: 16px;
               font-style: normal;
               text-align: center;

@@ -58,11 +58,7 @@ const Header = () => {
               />
               <Link href="/">
                 <span className="frame1196-text100 clickable-title">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: 'Ваше название',
-                    }}
-                  ></span>
+                  <span className="site-title"><span>Ваше </span><br className="site-title-br" /><span>название</span></span>
                 </span>
               </Link>
             </div>
@@ -527,6 +523,8 @@ const Header = () => {
             white-space: normal;
             letter-spacing: 1.5px;
           }
+          .site-title-br { display: none; }
+          @media (max-width: 479px) { .site-title-br { display: inline; } }
 
           .clickable-title {
             cursor: pointer;

@@ -17,7 +17,7 @@ const Vikup = (props) => {
   const seoData = getSEOData('/vikup')
   const baseUrl = 'https://remstirmash.od.ua'
   const serviceData = getServiceData(
-    'Выкуп б/у стиральных машин',
+    'Выкуп б/у стиральн��х машин',
     'Выкупаем б/у стиральные машины в Одессе дорого. Любые марки и состояние.',
     `${baseUrl}/vikup`
   )
@@ -752,7 +752,7 @@ const Vikup = (props) => {
             font-family: var(--font-nunito);
             font-weight: 500;
           }
-          .page1-text10-black { color: #000000; }
+          .page1-text10-black { color: var(--dl-color-theme-neutral-dark); }
           .page1-text10-blue { color: #87ceeb; font-weight: 600; }
           .page1-text13 {
             font-size: 16px;
