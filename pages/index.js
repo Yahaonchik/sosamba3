@@ -14,11 +14,12 @@ import Image from 'next/image'
 const QuestionModal = dynamic(() => import('../components/QuestionModal'), { ssr: false })
 import OrderButton from '../components/OrderButton'
 import AskButton from '../components/AskButton'
-const ReviewModal = dynamic(() => import('../components/ReviewModal'), { ssr: false })
-import SEOHead from '../components/SEOHead'
-import Breadcrumbs from '../components/Breadcrumbs'
-import { getSEOData } from '../utils/seoConfig'
-import { getMainPageStructuredData } from '../utils/structuredData'
+    const ReviewModal = dynamic(() => import('../components/ReviewModal'), { ssr: false })
+    import SEOHead from '../components/SEOHead'
+    import Breadcrumbs from '../components/Breadcrumbs'
+    import { getSEOData } from '../utils/seoConfig'
+    import { getMainPageStructuredData } from '../utils/structuredData'
+    import InlineCTA from '../components/InlineCTA'
 
 const Frame1196 = (props) => {
   const [activeFAQ, setActiveFAQ] = useState(1)
@@ -42,7 +43,7 @@ const Frame1196 = (props) => {
   const reviewsRef = React.useRef(null)
   const router = useRouter()
 
-  // Пр��веряе��, является ли текущая страница стр��ницей проблемы
+  // Пр����веряе��, является ли текущая страница стр��ницей проблемы
   const isProblemPage = router.pathname && (
     router.pathname.includes('NESLIVAETIVODU') ||
     router.pathname.includes('NEGREETIVODU') ||
@@ -222,7 +223,7 @@ const Frame1196 = (props) => {
           <div className="frame1196-hero-bg" aria-hidden="true"></div>
           <div className="frame1196-container112">
             <h1 className="frame1196-text108">
-              <span>Ремонт стирал��ных маши�� </span>
+              <span className="frame1196-hero-regular">Ремонт стиральных машин </span>
               <span className="frame1196-text110">в </span>
               <span className="frame1196-text111">Одессе!</span>
             </h1>
@@ -232,7 +233,7 @@ const Frame1196 = (props) => {
             <Link legacyBehavior href="/neslivaetvodu">
               <a className="frame1196-container113">
                 <p className="frame1196-text112">
-                  Стиральная машина не сливает воду
+                  Стиральн��я машина не сливает воду
                 </p>
                 <div className="frame1196-arrow10">
                   <svg
@@ -247,7 +248,7 @@ const Frame1196 = (props) => {
                     ></path>
                   </svg>
                 </div>
-                <div className="frame1196-image15"><Image alt="Стиральная ��ашина не сливает воду" src="/problems 2/11-300h.webp" fill sizes="149px" quality={100} priority fetchPriority="high" loading="eager" style={{ objectFit: 'cover' }} /></div>
+                <div className="frame1196-image15"><Image alt="Стиральная ���ашина не сливает воду" src="/problems 2/11-300h.webp" fill sizes="149px" quality={100} priority fetchPriority="high" loading="eager" style={{ objectFit: 'cover' }} /></div>
               </a>
             </Link>
             <Link legacyBehavior href="/negreetvodu">
@@ -398,7 +399,7 @@ const Frame1196 = (props) => {
             <Link legacyBehavior href="/neotkrivaetsadverca">
               <a className="frame1196-container121">
                 <p className="frame1196-text120">
-                  У стиральной машины не откр��вается д��ерца
+                  У стиральной ма��ины не откр��вается д��ерца
                 </p>
                 <div className="frame1196-arrow18">
                   <svg
@@ -448,7 +449,7 @@ const Frame1196 = (props) => {
             </span>
             <br className="frame1196-text127" />
             <span className="frame1196-text128">
-              Профессионально устраняем люб��е неиспр����ности стиральных ��ашин —
+              Профессионально устра��яем люб��е неиспр����ности стиральных ��ашин —
               от самых простых д�� самых сложных.
             </span>
             <br className="frame1196-text129" />
@@ -783,12 +784,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
                 <div className="frame1196-container136 clickable-button" onClick={openModal}>
-                  <img
-                    alt="image"
-                    src="/ICONS/29.svg"
-                    className="frame1196-image28"
-                  />
-                  <span className="frame1196-text146">Вызвать мастера</span>
+                  <InlineCTA onClick={openModal} />
                 </div>
               </div>
             </div>
@@ -834,12 +830,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
                 <div className="frame1196-container140 clickable-button" onClick={openModal}>
-                  <img
-                    alt="image"
-                    src="/ICONS/29.svg"
-                    className="frame1196-image29"
-                  />
-                  <span className="frame1196-text150">Вызвать мастера</span>
+                  <InlineCTA onClick={openModal} />
                 </div>
               </div>
             </div>
@@ -849,7 +840,7 @@ const Frame1196 = (props) => {
                   <span className="frame1196-text151">3</span>
                 </div>
                 <span className="frame1196-text152">
-                  Диаг��остика ��борудования (при отказе от ремонта)
+                  Диа����остика ��борудования (при отказе от ремонта)
                 </span>
               </div>
               <div className="frame1196-container143">
@@ -885,12 +876,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
                 <div className="frame1196-container144 clickable-button" onClick={openModal}>
-                  <img
-                    alt="image"
-                    src="/ICONS/29.svg"
-                    className="frame1196-image30"
-                  />
-                  <span className="frame1196-text154">Вызвать мастера</span>
+                  <InlineCTA onClick={openModal} />
                 </div>
               </div>
             </div>
@@ -932,7 +918,7 @@ const Frame1196 = (props) => {
               text={
                 <Fragment>
                   <span className="frame1196-text159">
-                    <span>Ремонт модуля управления</span>
+                    <span>Ремонт мод��ля управления</span>
                   </span>
                 </Fragment>
               }
@@ -1050,7 +1036,7 @@ const Frame1196 = (props) => {
               text3={
                 <Fragment>
                   <span className="frame1196-text174">
-                    <span>Вызвать мастера</span>
+                    <span>Вызв��ть мастера</span>
                   </span>
                 </Fragment>
               }
@@ -1061,14 +1047,14 @@ const Frame1196 = (props) => {
               text={
                 <Fragment>
                   <span className="frame1196-text175">
-                    <span>Устранение постороннего пред��ета из барабана, фильтра ��ли на��оса</span>
+                    <span>Устранение постороннего пред��ета из барабана, фильтра ��ли на����оса</span>
                   </span>
                 </Fragment>
               }
               text1={
                 <Fragment>
                   <span className="frame1196-text176">
-                    <span>от 500 грн</span>
+                    <span>от 500 гр��</span>
                   </span>
                 </Fragment>
               }
@@ -1223,7 +1209,7 @@ const Frame1196 = (props) => {
               text={
                 <Fragment>
                   <span className="frame1196-text195">
-                    <span>Замена амортизаторов (без учетаа ��тоимост�� амортизаторо��)</span>
+                    <span>Замена амортизаторов (без учетаа ��тоимост���� амортизаторо��)</span>
                   </span>
                 </Fragment>
               }
@@ -1387,12 +1373,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
                 <div className="frame1196-container148 clickable-button" onClick={openModal}>
-                  <img
-                    alt="image"
-                    src="/ICONS/29.svg"
-                    className="frame1196-image31"
-                  />
-                  <span className="frame1196-text214">Вызвать мастера</span>
+                  <InlineCTA onClick={openModal} />
                 </div>
               </div>
             </div>
@@ -1594,7 +1575,7 @@ const Frame1196 = (props) => {
               </div>
               <div className="item">
                 <Image
-                  alt="Рем��нт стиральных машин Electrolux �� Одессе - профессиональный сер��ис"
+                  alt="Рем��нт стиральных машин Electrolux ��� Одессе - профессиональный сер��ис"
                   src="/brands/electrolux-logo%201-200h.webp"
                   loading="eager"
                   className="frame1196-image36"
@@ -1630,7 +1611,7 @@ const Frame1196 = (props) => {
               </div>
               <div className="item">
                 <Image
-                  alt="Ремонт стиральных машиин Siemens в Одессе - проф����сион��ль��ый сервис"
+                  alt="Ремонт стиральных ма��иин Siemens в Одессе - проф����сион��ль����ый сервис"
                   src="/brands/image%203823125-200h.webp"
                   loading="eager"
                   className="frame1196-image39"
@@ -1811,11 +1792,10 @@ const Frame1196 = (props) => {
             <div className="frame1196-container158">
               <div className="frame1196-container159">
                 <h3 className="frame1196-text216">
-                  <span>
-                    Теперь продать с��иральную машину в Одессе -{' '}
-                    <span style={{ color: '#FFD84D', fontWeight: 700 }}>это не сложно</span>
-                    <span style={{ color: '#FFD84D' }}>!</span>
-                  </span>
+                  <span className="frame1196-sell-main">Теперь продать стиральную машину в </span>
+                  <br className="frame1196-sell-br" />
+                  <span className="frame1196-sell-main">Одессе </span>
+                  <span className="frame1196-sell-sub">— это не сложно!</span>
                 </h3>
                 <Link href="/vikup">
                   <button type="button" className="frame1196-button2 button">
@@ -1957,7 +1937,7 @@ const Frame1196 = (props) => {
                 <p className="frame1196-text219">
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: 'Находим неисправности быстро и точно благодаря профессиональ��о�� технике.',
+                      __html: 'Находим неис��равности быстро и точно благодаря профессиональ��о�� технике.',
                     }}
                   ></span>
                 </p>
@@ -2351,7 +2331,7 @@ const Frame1196 = (props) => {
                 <p className="frame1196-text223">
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: 'Выполняем работу качествен��о и доступно, без скрытых доплат и ненужных ра��ходов.',
+                      __html: 'Выполняем работу качествен��о и доступно, без скрытых допл��т и ненужных ��а��ходов.',
                     }}
                   ></span>
                 </p>
@@ -2965,7 +2945,7 @@ const Frame1196 = (props) => {
             <div className="frame1196-container185">
               <div className="frame1196-container186">
                 <figcaption className="frame1196-text229">
-                  Установка нового уплотнителя дверцы с��иралки Zanussi
+                  Установка нового уплотнителя двер��ы с��иралки Zanussi
                 </figcaption>
               </div>
             </div>
@@ -3166,7 +3146,7 @@ const Frame1196 = (props) => {
               <p className="frame1196-text240">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: '99% поломок устраняем на месте за 30-60 минут. Только редкие случаи требуют заказа специфически�� деталей и повторного визита через 1-2 дня',
+                    __html: '99% поломо�� устраняе�� на месте за 30-60 минут. Только редкие случаи требуют заказа специфически�� деталей и повторного визита через 1-2 дня',
                   }}
                 ></span>
               </p>
@@ -3211,7 +3191,7 @@ const Frame1196 = (props) => {
               >
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: '��аку�� гарантиюю вы п��ед��ставляете?',
+                    __html: '��аку�� гарантиюю вы п��ед���ставляете?',
                   }}
                 ></span>
               </h3>
@@ -3265,7 +3245,7 @@ const Frame1196 = (props) => {
               >
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Сколько стоит диагностика?',
+                    __html: 'Сколько ��тоит диагностика?',
                   }}
                 ></span>
               </h3>
@@ -3328,7 +3308,7 @@ const Frame1196 = (props) => {
                 <p className="frame1196-text246">
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: 'Мастер возит базовый набор популярных запчастей. Для редких моделей заказываем детали за 1-2 дня. прове��яем наличие по тел��фону заране��.',
+                      __html: 'Мастер возит базовый набор популярных запчастей. Для редких моделей заказываем детали за 1-2 дня. прове��яем наличие по тел����фону заране��.',
                     }}
                   ></span>
                 </p>
@@ -3487,7 +3467,7 @@ const Frame1196 = (props) => {
             <span>Стира��ьная машина — ��ехника, которая д��лжна работать исправно: отжимать, стирать и радовать стабильностью. Но на практике даже самая надёжная техника со времене�� тре��ует внимания. Механические детали изнашиваются, эл��ктроник�� даёт сбои, а бытовая на����рузка делает своё дело. Поэтому ремонт стиральн��х ма��ин в Одессе — не ��азовая услуга, а реа��ьная необходимость для многих владельцев. Важно доверить ремонт проверен����ым ��пе��иалистам, а не случайному мастеру.</span>
           </p>
           <p className="frame1196-text252 textITOGI">
-            <span>Под брендом "Ваше назван��е" работает команда мастеров, каждый из которых занимается ремонтом стирал��ных м��шин более с��ми лет. Мы обучались у лучших, прошли сертификацию, посещали техку��сы и накопили опыт р��боты с техникой разных поколений. ��егодня мы предлаг��ем ремонт стирал��ных машин в Одессе с гарантией, использованием оригинальных запчастей и вним��нием к ��аждой детали. В нашем распоряжении ���� профессио����ально оснащённая мастерская, склад комплекту��щих и выездной сервис. Мы находим даже редкие детали и точно знаем, как продлить жизнь вашей технике.</span>
+            <span>Под брендом "Ваше назван��е" работает команда мастеров, каждый из которых занимается ремонтом стирал��ных м��шин более с��ми лет. Мы обучались у лучших, прошли сертификацию, посещали техку��сы и накопили опыт р��боты с техникой разных поколений. ��егодня мы предлаг��ем ремонт стирал��ных машин в Одессе с гарантией, использованием оригинальных запчастей и вним��нием к ��аждой детали. В нашем распоряжении ���� профессио����ально оснащённая мастерская, склад комплекту��щих и выездной сервис. Мы находим даже редкие детали и точно знаем, как продлить жизнь ваш��й технике.</span>
           </p>
           <h2 className="textglavitogi">
             <span>Поче��у выбирают нас</span>
@@ -3533,7 +3513,7 @@ const Frame1196 = (props) => {
               <span className="textITOGI">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Работаем как с типовыми, так и со сложными неисправно��т��ми.',
+                    __html: 'Работ��ем как с типовыми, так и со сложными неисправно��т��ми.',
                   }}
                 ></span>
               </span>
@@ -3545,7 +3525,7 @@ const Frame1196 = (props) => {
           <p className="frame1196-text260 textITOGI">
             <span
               dangerouslySetInnerHTML={{
-                __html: 'Ремонт стиральных машин в Одессе необходим как новым, так и давно использованным ��оделям. Все уз��ы техники имею���� ограниченный ре��урс, и при активной эксплуатации однажды выходят из строя. Мы собрали самые частые причины, по к��торым клиенты обр��щаются в наш сервис:',
+                __html: 'Ремонт стиральных машин в Одессе необходим как новым, так и давно использованным ��оделям. Все уз��ы техники имею���� ограниченный ре��урс, и при активной эксплуатации однажды выхо��ят из строя. Мы собрали самые частые ��ричины, по к����торым клиенты обр��щаются в наш сервис:',
               }}
             ></span>
           </p>
@@ -3554,7 +3534,7 @@ const Frame1196 = (props) => {
               <span className="textITOGI">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Машина н�� сливает воду — проблема с помпой или засор сливн��й системы.',
+                    __html: 'Машина н�� слив��ет воду — проблема с помпой или засор сливн��й системы.',
                   }}
                 ></span>
               </span>
@@ -3572,7 +3552,7 @@ const Frame1196 = (props) => {
               <span className="textITOGI">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Не запускается стирка �� проверяем модуль у��равления или кнопку питания.',
+                    __html: 'Не запускается стирка �� проверяем модуль у��равления или кно��ку питани��.',
                   }}
                 ></span>
               </span>
@@ -3581,7 +3561,7 @@ const Frame1196 = (props) => {
               <span className="textITOGI">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Течёт корпус — устра��яем утечки, заменяем шланги, ма��жеты, патрубки.',
+                    __html: 'Течёт корпус — устра��яем утечки, заменяем шланги, ма��жеты, патрубк��.',
                   }}
                 ></span>
               </span>
@@ -3599,7 +3579,7 @@ const Frame1196 = (props) => {
               <span className="textITOGI">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Ошибка на экране — расшифровываем код неисправности и устраняем при��ину.',
+                    __html: 'Ошибка на экране — расшифровываем код н��исправности и устраняем при��ину.',
                   }}
                 ></span>
               </span>
@@ -3608,7 +3588,7 @@ const Frame1196 = (props) => {
               <span className="textITOGI">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Регу��ярное техобслуживание — профилактика ��аз в 12 месяцев продлевает срок службы.',
+                    __html: 'Регу��ярное техобслуживание — профилактика ��аз в 12 месяцев продлевает сро�� службы.',
                   }}
                 ></span>
               </span>
@@ -3625,14 +3605,14 @@ const Frame1196 = (props) => {
           </h2>
           <p className="frame1196-text271 textITOGI">
             <span>
-              Сервисный ц��нтр "Ваше название" — э��о современная профессиональная мастерска���� в Одессе, где в���п��лняются все виды ремонта: от быстрой замены деталей до полного восстановления после серьёзных поломок. Мы берёмс�� за любую те��нику: от массов��х моделей до премиум-сегмента. Выполняем замену амортизаторов, подши��ников, сливных насосов, управляющих модулей, датчиков, ТЭ��ов. Также восстанавливаем герметичность, ��еняем л��ки, устраняем вибрации и посто��онние шумы. Прово��им профилактику и глубокую чистку барабана и бака. Каждый ремонт начинае��ся с диагностики — ма��тер объясняет, в чём проблема, и предлагает решение. Только по���ле согл��сования с клиентом мы ��риступаем к работе. Мы ц��ним довери�� и работаем аккур��тно — б��з спешки и халтуры.
+              Сервисный ц��нтр "Ваше название" — э��о современная проф��ссиональная мастерска���� в Одессе, где в�������лняются все виды ремонта: от быстрой замены деталей до полного восстановления после серьёзных поломок. Мы бер��мс�� за любую те��нику: от массов��х моделей до пр��миум-сегмента. Выполняем замену амортизаторов, подши��ников, сливных насосов, управляющих модулей, датчиков, ТЭ��ов. Также восстанавливаем герметичность, ��еняем л��ки, устраняем вибрации и посто��онние шумы. Прово��им профилактику и глубокую чистку барабана и бака. Каждый ремонт начинае��ся с диагностики — ма��тер объясняет, в чём проблема, и предлагает решение. Только по���ле согл��сования с клиентом мы ��риступаем к работе. Мы ц��ним довери�� и работаем аккур��тно — б��з спешки и халтуры.
             </span>
           </p>
           <h2 className="textglavitogi">
             <span>Контакты</span>
           </h2>
           <p className="textITOGI">
-            <span>��иже на сайте — карта проезда к нашей мастерской, а также наши телефоны. З��оните для записи, ко��сультации или если заметили сбои в работе вашей стиральной маш��ны. Мы всё объясним, рассчитаем стоимость и поможем. "Ваше название" — это ремонт стиральны�� машин в Одессе быстро, надёжно и профес��ионально.</span>
+            <span>��иже на сайте — карта проезда к нашей мастерск��й, а также наши телефоны. З��оните для записи, ко��сульта��ии или если заметили сбои в работе вашей стиральной маш��ны. Мы всё объясним, рассчитаем стоимость и поможем. "Ваше название" — это ремонт стиральны�� машин в Одессе быстро, надёжно и профес��ионально.</span>
           </p>
         </div>
         )}
@@ -3828,7 +3808,7 @@ const Frame1196 = (props) => {
               className="frame1196-frame10702"
             />
             <p className="frame1196-text278">
-              Я считаю это победа над стираль����й маши��ой, кото��ой 12 лет))  Очень круто!! Бла��о��арю!! Она пала в руки мастера и отдала��ь ему полностью, �� не стала брыкаться. не знаю, что он там с ней делал, н�� ���е��час она как шелковая стирает мой ситцевое круж��вное белье&lt;3
+              Я считаю это победа над стираль����й маши��ой, кото��ой 12 лет))  Очень круто!! Бла��о��арю!! Она пала в руки мастера и отдала��ь ему полностью, �� не стала брыкаться. не знаю, что он там с ней делал, н�� ���е��час она как шелковая сти��ает мой ситцевое круж��вное белье&lt;3
             </p>
             <svg
               width="330"
@@ -4217,6 +4197,8 @@ const Frame1196 = (props) => {
             letter-spacing: 1px;
             font-style: italic;
           }
+          .frame1196-hero-regular { font-family: var(--font-nunito); font-weight: 400; font-style: normal; }
+          .frame1196-sell-br { display: block; content: ""; }
           .frame1196-image14 {
             width: 95px;
             height: 92px;
@@ -5131,11 +5113,14 @@ const Frame1196 = (props) => {
             font-size: 15px;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 400;
-            line-height: 1.3;
+            font-weight: 500;
+            line-height: 1.15;
             white-space: normal;
             overflow-wrap: break-word;
             letter-spacing: 1.2px;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
           }
           .frame1196-icon136 {
             height: 5px;
@@ -5150,6 +5135,10 @@ const Frame1196 = (props) => {
             font-style: italic;
             font-family: var(--font-nunito);
             font-weight: 300;
+            line-height: 1.3;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
             white-space: normal;
             overflow-wrap: break-word;
           }
@@ -5188,11 +5177,14 @@ const Frame1196 = (props) => {
             font-size: 15px;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 400;
-            line-height: 1.3;
+            font-weight: 500;
+            line-height: 1.15;
             white-space: normal;
             overflow-wrap: break-word;
             letter-spacing: 1.2px;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
           }
           .frame1196-icon142 {
             height: 5px;
@@ -5207,6 +5199,10 @@ const Frame1196 = (props) => {
             font-style: italic;
             font-family: var(--font-nunito);
             font-weight: 300;
+            line-height: 1.3;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
             white-space: normal;
             overflow-wrap: break-word;
           }
@@ -5246,11 +5242,14 @@ const Frame1196 = (props) => {
             font-size: 15px;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 400;
-            line-height: 1.3;
+            font-weight: 500;
+            line-height: 1.15;
             white-space: normal;
             overflow-wrap: break-word;
             letter-spacing: 1.2px;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
           }
           .frame1196-text133, .frame1196-text135, .frame1196-text137 { font-weight: 400; }
           .frame1196-icon148 {
@@ -5266,6 +5265,10 @@ const Frame1196 = (props) => {
             font-style: italic;
             font-family: var(--font-nunito);
             font-weight: 300;
+            line-height: 1.3;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: auto;
             white-space: normal;
             overflow-wrap: break-word;
           }
@@ -5385,8 +5388,9 @@ const Frame1196 = (props) => {
           }
           .frame1196-text141 {
             font-size: 16px;
+            line-height: 1;
             font-family: var(--font-nunito);
-            font-weight: 400;
+            font-weight: 300;
           }
           .frame1196-text142 {
             font-style: normal;
@@ -5404,14 +5408,15 @@ const Frame1196 = (props) => {
             max-width: 280px;
           }
           .frame1196-text145 {
-            font-size: 15px;
+            font-size: 16px;
             max-width: 100px;
             min-width: 100px;
             align-self: center;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
+            line-height: 1;
           }
           .frame1196-icon162 {
             display: none;
@@ -5431,14 +5436,14 @@ const Frame1196 = (props) => {
             fill: #4ec8ed;
             color: #4ec8ed;
             width: 100%;
-            font-size: 15px;
+            font-size: 14px;
             max-width: 150px;
             align-self: center;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
             font-weight: 400;
-            line-height: 1.15;
+            line-height: 1;
             letter-spacing: 1.5px;
             text-decoration: none;
           }
@@ -5475,9 +5480,10 @@ const Frame1196 = (props) => {
           }
           .frame1196-text148 {
             font-size: 16px;
+            line-height: 1;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 400;
+            font-weight: 300;
           }
           .frame1196-container139 {
             gap: var(--dl-layout-space-oneandhalfunits);
@@ -5486,14 +5492,15 @@ const Frame1196 = (props) => {
             max-width: 280px;
           }
           .frame1196-text149 {
-            font-size: 15px;
+            font-size: 16px;
             max-width: 100px;
             min-width: 100px;
             align-self: center;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
+            line-height: 1;
           }
           .frame1196-icon168 {
             display: none;
@@ -5513,14 +5520,14 @@ const Frame1196 = (props) => {
             fill: #4ec8ed;
             color: #4ec8ed;
             width: 100%;
-            font-size: 15px;
+            font-size: 14px;
             max-width: 150px;
             align-self: center;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
             font-weight: 400;
-            line-height: 1.15;
+            line-height: 1;
             letter-spacing: 1.5px;
             text-decoration: none;
           }
@@ -5557,9 +5564,10 @@ const Frame1196 = (props) => {
           }
           .frame1196-text152 {
             font-size: 16px;
+            line-height: 1;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 400;
+            font-weight: 300;
           }
           .frame1196-container143 {
             gap: var(--dl-layout-space-oneandhalfunits);
@@ -5575,7 +5583,8 @@ const Frame1196 = (props) => {
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
+            line-height: 1;
           }
           .frame1196-icon174 {
             display: none;
@@ -5595,14 +5604,14 @@ const Frame1196 = (props) => {
             fill: #4ec8ed;
             color: #4ec8ed;
             width: 100%;
-            font-size: 15px;
+            font-size: 14px;
             max-width: 150px;
             align-self: center;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
             font-weight: 400;
-            line-height: 1.15;
+            line-height: 1;
             letter-spacing: 1.5px;
             text-decoration: none;
           }
@@ -5814,9 +5823,11 @@ const Frame1196 = (props) => {
           }
           .frame1196-text212 {
             color: var(--dl-color-theme-neutral-dark);
+            font-size: 16px;
+            line-height: 1;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 400;
+            font-weight: 300;
           }
           .frame1196-container147 {
             gap: var(--dl-layout-space-oneandhalfunits);
@@ -5832,7 +5843,8 @@ const Frame1196 = (props) => {
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
+            line-height: 1;
           }
           .frame1196-icon180 {
             display: none;
@@ -5852,14 +5864,14 @@ const Frame1196 = (props) => {
             fill: #4ec8ed;
             color: #4ec8ed;
             width: 100%;
-            font-size: 15px;
+            font-size: 14px;
             max-width: 150px;
             align-self: center;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
             font-weight: 400;
-            line-height: 1.15;
+            line-height: 1;
             letter-spacing: 1.5px;
             text-decoration: none;
           }
@@ -6145,6 +6157,8 @@ const Frame1196 = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
+          .frame1196-sell-main { font-family: var(--font-nunito); font-weight: 400; font-size: 23px; font-style: normal; }
+          .frame1196-sell-sub { font-family: var(--font-nunito); font-weight: 300; font-size: 23px; font-style: italic; color: #FFD84D; }
           .frame1196-button2 {
             color: #ffffff;
             width: 254px;
@@ -6459,6 +6473,7 @@ const Frame1196 = (props) => {
             width: 100%;
             height: 100%;
             font-size: 15px;
+            line-height: 1.15;
             font-style: normal;
             font-family: var(--font-nunito);
             font-weight: 500;
@@ -6606,6 +6621,7 @@ const Frame1196 = (props) => {
             width: 100%;
             height: 100%;
             font-size: 15px;
+            line-height: 1.15;
             font-style: normal;
             font-family: var(--font-nunito);
             font-weight: 500;
@@ -6753,6 +6769,7 @@ const Frame1196 = (props) => {
             width: 100%;
             height: 100%;
             font-size: 15px;
+            line-height: 1.15;
             font-style: normal;
             font-family: var(--font-nunito);
             font-weight: 500;
@@ -8655,7 +8672,7 @@ const Frame1196 = (props) => {
             position: absolute;
           }
 
-          /* У���ираем margin-bottom �� ���лока с з��голо��ком и кнопкой ��о 1618px */
+          /* У���ир��ем margin-bottom �� ���лока с з��голо��ком и кнопкой ��о 1618px */
           @media (max-width: 1618px) {
             .frame1196-container112 {
               margin-bottom: 0px;
@@ -10483,7 +10500,8 @@ const Frame1196 = (props) => {
             .frame1196-text146 {
               fill: #4ec8ed;
               color: #4ec8ed;
-              font-size: 14.5px;
+              font-size: 14px;
+              line-height: 1;
               max-width: 150px;
               text-align: center;
               align-items: center;
@@ -10526,7 +10544,8 @@ const Frame1196 = (props) => {
             }
             .frame1196-text148 {
               width: 100%;
-              font-size: 15px;
+              font-size: 16px;
+              line-height: 1;
               font-style: normal;
               font-family: var(--font-nunito);
               font-weight: 400;
@@ -10564,7 +10583,8 @@ const Frame1196 = (props) => {
             .frame1196-text150 {
               fill: #4ec8ed;
               color: #4ec8ed;
-              font-size: 14.5px;
+              font-size: 14px;
+              line-height: 1;
               max-width: 150px;
               text-align: center;
               align-items: center;
@@ -10607,7 +10627,8 @@ const Frame1196 = (props) => {
             }
             .frame1196-text152 {
               width: 100%;
-              font-size: 15px;
+              font-size: 16px;
+              line-height: 1;
               font-style: normal;
               font-family: var(--font-nunito);
               font-weight: 400;
@@ -10645,7 +10666,8 @@ const Frame1196 = (props) => {
             .frame1196-text154 {
               fill: #4ec8ed;
               color: #4ec8ed;
-              font-size: 14.5px;
+              font-size: 14px;
+              line-height: 1;
               max-width: 150px;
               text-align: center;
               align-items: center;
@@ -10705,7 +10727,8 @@ const Frame1196 = (props) => {
             .frame1196-text214 {
               fill: #4ec8ed;
               color: #4ec8ed;
-              font-size: 14.5px;
+              font-size: 14px;
+              line-height: 1;
             }
             .frame1196-icon186 {
               left: -14px;
@@ -11590,7 +11613,7 @@ const Frame1196 = (props) => {
               color: #87ceeb !important;
             }
 
-            /* Активное состояние навигации на м��бильных */
+            /* Активное состоя��ие навигации на м��бильных */
             .frame1196-nav-active {
               color: #87ceeb !important;
             }
@@ -11603,7 +11626,7 @@ const Frame1196 = (props) => {
           }
 
 
-          /* Стили для ссы��ок-карточ����к */
+          /* Стили для ссы��ок-карточ������к */
           .frame1196-container113,
           .frame1196-container114,
           .frame1196-container115,
@@ -11633,7 +11656,7 @@ const Frame1196 = (props) => {
             box-shadow: 0px 4px 15px 0px rgba(175, 160, 115, 0.4);
           }
 
-          /* Ан��мация ��азворачи����������ия и�� центр�� для ответов FAQ */
+          /* Ан��мация ��азворачи������������ия и�� центр�� для ответов FAQ */
           .frame1196-otvet1,
           .frame1196-otvet2,
           .frame1196-otvet3,
@@ -11667,7 +11690,7 @@ const Frame1196 = (props) => {
           }
 
 
-          /* Ли������йная ан��м��ция д�����я ико����к */
+          /* Ли��������йная а����м��ция д�����я ико����к */
           .frame1196-icon338,
           .frame1196-icon340,
           .frame1196-icon342,
@@ -11704,7 +11727,7 @@ const Frame1196 = (props) => {
             fill: #4EC8ED !important;
           }
 
-          /* Пр�� нажатии на ��сю карточку - стрелка становится голубой */
+          /* Пр�� нажатии на ��сю карточку - стрелка становится голуб��й */
           .frame1196-container113:active .frame1196-arrow10 svg path,
           .frame1196-container114:active .frame1196-arrow11 svg path,
           .frame1196-container115:active .frame1196-arrow12 svg path,
@@ -11747,7 +11770,7 @@ const Frame1196 = (props) => {
             transform: translateY(0) !important;
           }
 
-          /* ��лоба��ьные hover эффекты для Blue1 и Blue2 ко��понентов */
+          /* ��лоба���ьные hover эффекты для Blue1 и Blue2 ко��понентов */
           :global(.blue1-container4),
           :global(.blue2-container4) {
             cursor: pointer !important;
@@ -11788,7 +11811,7 @@ const Frame1196 = (props) => {
             transition: transform 0.2s ease, filter 0.2s ease !important;
           }
 
-          /* Дополнительные hover эффекты для текста и иконок в ��нопках */
+          /* Дополнительные hover эффекты для текста и иконок в ����нопках */
           .frame1196-container136:hover .frame1196-text146,
           .frame1196-container140:hover .frame1196-text150,
           .frame1196-container144:hover .frame1196-text154,

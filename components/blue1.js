@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
+import InlineCTA from './InlineCTA'
 
 const Blue1 = ({ rootClassName = '', text3, text, text2, imageSrc = '/ICONS/29.svg', imageAlt = 'image', text1, onClick, clickableTitle = false, titleLink = null }) => {
   return (
@@ -99,25 +100,7 @@ const Blue1 = ({ rootClassName = '', text3, text, text2, imageSrc = '/ICONS/29.s
             ></path>
           </svg>
           <div className="blue1-container4" onClick={onClick}>
-            <img
-              alt={imageAlt}
-              src={imageSrc}
-              loading="lazy"
-              className="blue1-image"
-            />
-            <strong className="blue1-text4">
-              {text3 ?? (
-                <Fragment>
-                  <span className="blue1-text5">
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: 'Вызвать мастера',
-                      }}
-                    ></span>
-                  </span>
-                </Fragment>
-              )}
-            </strong>
+            <InlineCTA onClick={onClick} />
           </div>
         </div>
       </div>
@@ -156,9 +139,10 @@ const Blue1 = ({ rootClassName = '', text3, text, text2, imageSrc = '/ICONS/29.s
           }
           .blue1-text2 {
             font-size: 16px;
+            line-height: 1;
             font-style: normal;
             font-family: var(--font-nunito);
-            font-weight: 400;
+            font-weight: 300;
           }
 
           .clickable-service-title {
@@ -180,14 +164,15 @@ const Blue1 = ({ rootClassName = '', text3, text, text2, imageSrc = '/ICONS/29.s
             max-width: 280px;
           }
           .blue1-text3 {
-            font-size: 15px;
+            font-size: 16px;
+            line-height: 1;
             max-width: 100px;
             min-width: 100px;
             align-self: center;
             font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
           }
           .blue1-icon1 {
             display: none;
@@ -197,29 +182,9 @@ const Blue1 = ({ rootClassName = '', text3, text, text2, imageSrc = '/ICONS/29.s
             width: 100%;
             display: flex;
           }
-          .blue1-image {
-            width: 20px;
-            height: 19px;
-            align-self: center;
-            object-fit: cover;
-            transition: transform 0.2s ease, filter 0.2s ease;
-          }
-          .blue1-text4 {
-            fill: #4ec8ed;
-            color: #4ec8ed;
-            width: 100%;
-            font-size: 14px;
-            max-width: 150px;
-            align-self: center;
-            font-style: normal;
-            text-align: center;
-            font-family: var(--font-nunito);
-            font-weight: 500;
-            text-decoration: none;
-          }
-          .blue1-text5 {
-            display: inline-block;
-          }
+          .blue1-image { width: 20px; height: 19px; align-self: center; object-fit: cover; transition: transform 0.2s ease, filter 0.2s ease; }
+          .blue1-text4 { display: none; }
+          .blue1-text5 { display: none; }
           .blue1-text6 {
             display: inline-block;
           }
