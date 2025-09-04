@@ -77,6 +77,9 @@ const Logos1 = (props) => {
           }
           .logos1-text1 {
             text-align: center;
+            font-family: var(--font-nunito);
+            font-weight: 400;
+            font-size: 18px;
           }
           .logos1-logo1 {
             object-fit: contain;

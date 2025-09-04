@@ -127,7 +127,7 @@ const Vikup = (props) => {
               <div className="page1-container16">
                 <img alt="image" src="/ICONS/23222.svg" loading="lazy" className="page1-image3" />
                 <div className="page1-container17">
-                  <h3 className="page1-text29">Вместо мусора – польза</h3>
+                  <h3 className="page1-text29">Вме��то мусора – польза</h3>
                   <svg
                     width="100%"
                     xmlns="http://www.w3.org/2000/svg"
@@ -816,12 +816,12 @@ const Vikup = (props) => {
           .page1-text26 {
             color: rgb(255, 255, 255);
             height: auto;
-            font-size: 23px;
+            font-size: 18px;
             align-self: center;
-            font-style: italic;
+            font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
             line-height: normal;
             font-stretch: normal;
             text-decoration: none;
@@ -1088,12 +1088,12 @@ const Vikup = (props) => {
           .page1-text37 {
             color: rgb(255, 255, 255);
             height: auto;
-            font-size: 23px;
+            font-size: 18px;
             align-self: center;
-            font-style: italic;
+            font-style: normal;
             text-align: center;
             font-family: var(--font-nunito);
-            font-weight: 500;
+            font-weight: 400;
             line-height: normal;
             font-stretch: normal;
             text-decoration: none;

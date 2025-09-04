@@ -184,7 +184,7 @@ const OrderModal = ({ isOpen, onClose, successVariant = 'screenAuto' }) => {
         .modal-content { background: white; width: 33.33%; height: 100%; padding: 40px; box-shadow: 2px 0 20px rgba(0, 0, 0, 0.3); display: flex; flex-direction: column; animation: slideInLeft 0.3s ease-out; }
         @keyframes slideInLeft { from { transform: translateX(-100%); } to { transform: translateX(0); } }
         .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
-        .modal-header h2 { margin: 0; font-size: 28px; font-weight: bold; color: #333; font-family: var(--font-nunito), sans-serif; }
+        .modal-header h2 { margin: 0; font-size: 18px; font-weight: 400; color: #333; font-family: var(--font-nunito), sans-serif; }
         .modal-close { background: none; border: none; font-size: 30px; cursor: pointer; color: #999; padding: 0; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.2s ease; }
         .modal-close:hover { background-color: #f5f5f5; color: #333; }
         .modal-body { flex: 1; display: flex; flex-direction: column; }
@@ -213,7 +213,7 @@ const OrderModal = ({ isOpen, onClose, successVariant = 'screenAuto' }) => {
         .toast-text { font-size: 14px; font-family: var(--font-nunito), sans-serif; }
         .success-banner { position: fixed; top: 0; left: 0; right: 0; background: #E6F9FE; color: #1b1b1b; z-index: 1100; padding: 10px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
         .success-banner .banner-text { text-align: center; font-family: var(--font-nunito), sans-serif; font-size: 15px; }
-        @media (max-width: 768px) { .modal-content { width: 90%; height: auto; max-height: 90%; margin: 16px; border-radius: 12px; animation: slideInUp 0.3s ease-out; } @keyframes slideInUp { from { transform: translateY(100%); } to { transform: translateY(0); } } .modal-overlay { justify-content: center; padding: 16px; } .modal-header h2 { font-size: 23px; } .modal-description { font-size: 15px; margin-bottom: 36px; } .order-form { gap: 21px; } .form-input { padding: 11px; font-size: 15px; } .phone-input-group .form-input { padding-left: 60px; } .phone-prefix { left: 14px; font-size: 15px; } .form-input::placeholder { font-size: 15px; } .submit-wrapper { margin-top: 16px; } .success-banner .banner-text { font-size: 14px; } .success-toast { bottom: 16px; padding: 10px 14px; } .toast-text { font-size: 13px; } }
+        @media (max-width: 768px) { .modal-content { width: 90%; height: auto; max-height: 90%; margin: 16px; border-radius: 12px; animation: slideInUp 0.3s ease-out; } @keyframes slideInUp { from { transform: translateY(100%); } to { transform: translateY(0); } } .modal-overlay { justify-content: center; padding: 16px; } .modal-header h2 { font-size: 18px; } .modal-description { font-size: 15px; margin-bottom: 36px; } .order-form { gap: 21px; } .form-input { padding: 11px; font-size: 15px; } .phone-input-group .form-input { padding-left: 60px; } .phone-prefix { left: 14px; font-size: 15px; } .form-input::placeholder { font-size: 15px; } .submit-wrapper { margin-top: 16px; } .success-banner .banner-text { font-size: 14px; } .success-toast { bottom: 16px; padding: 10px 14px; } .toast-text { font-size: 13px; } }
       `}</style>
     </>
   )

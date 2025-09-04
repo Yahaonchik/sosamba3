@@ -33,7 +33,7 @@ const CallMasterSection = ({
 
       <h2 className="callout-title">{title}</h2>
       <p className="callout-text">
-        <span>Если вы выполнили все рекомендации, но проблема осталась — обратитесь в сервис&nbsp;</span>
+        <span>Если вы выполнили ��се рекомендации, но проблема осталась — обратитесь в сервис&nbsp;</span>
         <span className="company-quote">"</span>
         <span className="company-name">{companyName}</span>
         <span className="company-quote">"</span>
@@ -48,7 +48,7 @@ const CallMasterSection = ({
           {phones.map((p, idx) => (
             <div className="phone-item" key={idx}>
               <img alt="phone" src={p.icon} loading="lazy" className="phone-icon" />
-              <a href={toTelHref(p.number)} className="phone-number" aria-label={`Позвонить по номеру ${p.number}`}>{p.number}</a>
+              <a href={toTelHref(p.number)} className="phone-number" aria-label={`Позвонить п�� номеру ${p.number}`}>{p.number}</a>
             </div>
           ))}
         </div>
@@ -87,7 +87,7 @@ const CallMasterSection = ({
 
         .callout-title {
           color: var(--dl-color-theme-neutral-dark);
-          font-size: 19px;
+          font-size: 18px;
           text-align: center;
           font-family: var(--font-nunito);
           font-weight: 400;
@@ -160,7 +160,7 @@ const CallMasterSection = ({
         }
         @media (max-width: 479px) {
           .callout-container { max-width: 290px; padding-left: 15px; padding-right: 15px; }
-          .callout-title { color: rgb(49, 49, 49); font-size: 17px; font-family: var(--font-nunito); font-weight: 500; }
+          .callout-title { color: rgb(49, 49, 49); font-size: 18px; font-family: var(--font-nunito); font-weight: 400; }
           .callout-text { font-size: 14px; font-family: var(--font-nunito); }
           .workdays { font-size: 15px; }
           .phone-number { font-size: 17px; }

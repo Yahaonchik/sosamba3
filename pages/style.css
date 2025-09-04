@@ -100,10 +100,10 @@
 
 .textglavitogi {
  color: var(--dl-color-theme-neutral-dark);
- font-size: 21px;
+ font-size: 18px;
  font-style: normal;
  font-family: var(--font-nunito);
- font-weight: 550;
+ font-weight: 400;
  line-height: 1.5;
 }
 
@@ -248,7 +248,7 @@
    font-weight: 400;
  }
  .textglavitogi {
-   font-size: 19px;
+   font-size: 18px;
    line-height: 1.35;
  }
 }
