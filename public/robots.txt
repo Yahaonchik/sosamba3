@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://sosamba3.vercel.app/sitemap.xml
