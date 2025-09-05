@@ -114,19 +114,21 @@ const PageNavigation = ({ prevPage, nextPage }) => {
         }
 
         .page-nav-title {
-          color: rgb(80, 80, 80);
+          color: #111111;
           font-size: 17px;
           font-weight: 600;
           margin: 0;
-          margin-bottom: 4px;
+          margin-bottom: 14px; /* increased gap by 10px */
+          font-family: var(--font-nunito), sans-serif;
         }
 
         .page-nav-subtitle {
           color: rgb(90, 90, 90);
           font-size: 15px;
-          font-weight: 500;
+          font-weight: 400;
           max-width: 200px;
           line-height: 1.4;
+          font-family: var(--font-nunito), sans-serif;
         }
 
         @media (max-width: 768px) {

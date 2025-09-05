@@ -21,6 +21,10 @@ const PhoneModal = ({ isOpen, onClose }) => {
         <div className="pm-card" onClick={(e) => e.stopPropagation()}>
           <button className="pm-close" onClick={onClose} aria-label="Закрыть">×</button>
 
+          {/* Decorative SVGs */}
+          <img src="/handyman.svg" alt="handyman" className="pm-svg pm-svg-handyman" />
+          <img src="/build.svg" alt="build" className="pm-svg pm-svg-build" />
+
           <div className="pm-center">
             <div className="pm-title">Контакты</div>
             <a href={`tel:+${phoneDigits}`} className="pm-phone">{PHONE_DISPLAY}</a>
@@ -76,6 +80,17 @@ const PhoneModal = ({ isOpen, onClose }) => {
         .pm-card { position: relative; width: 537px; height: 305px; background: transparent url('https://cdn.builder.io/api/v1/image/assets%2Fa967e918a30549b3acea58ed36a6d5a2%2F7451f8cb8515418886f1bc586d0d21d7?format=webp&width=800') top center/contain no-repeat; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.15); overflow: hidden; }
         .pm-close { position: absolute; top: 10px; right: 10px; background: transparent; border: 0; font-size: 24px; width: 36px; height: 36px; border-radius: 8px; cursor: pointer; z-index: 2; color: #232020; }
         .pm-icons { position: absolute; left: 0; right: 0; bottom: 0; height: 118px; }
+        .pm-svg { position: absolute; width: 44px; height: 44px; opacity: 0.95; z-index: 1; }
+    .pm-svg-handyman { left: 18px; top: 18px; }
+    /* raised by 50px: was bottom:18px -> now bottom:68px */
+    .pm-svg-build { right: 18px; bottom: 108px; }
+
+    @media (max-width: 560px) {
+      .pm-svg { width: 28px; height: 28px; }
+      .pm-svg-handyman { left: 10px; top: 10px; }
+      /* mobile raised by 50px: was bottom:10px -> now bottom:60px */
+      .pm-svg-build { right: 10px; bottom: 100px; }
+    }
         .pm-item { position: absolute; transform: translateX(-50%); }
         .pm-item.viber { left: 25.5%; bottom: 0; }
         .pm-item.telegram { left: 50.1%; bottom: 0; }

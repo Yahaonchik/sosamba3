@@ -27,22 +27,25 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  // Проверяем, является ли текущая страница страницей статей или проблемы
-  const isArticlesPage = router.pathname === '/articles' || (router.pathname && (
-    router.pathname.includes('NESLIVAETIVODU') ||
-    router.pathname.includes('NEGREETIVODU') ||
-    router.pathname.includes('PROTEKAET') ||
-    router.pathname.includes('SILNOSHUMIT') ||
-    router.pathname.includes('NEVKLUCHAETSA') ||
-    router.pathname.includes('ZAVISAETNAPROGRAMME') ||
-    router.pathname.includes('NEOTJIMAET') ||
-    router.pathname.includes('NENABIRRAETVODU') ||
-    router.pathname.includes('NEOTKRIVATSADVERCA') ||
-    router.pathname.includes('jirniepyatna') ||
-    router.pathname.includes('jvachka') ||
-    router.pathname.includes('vlapalisvkrov') ||
-    router.pathname.includes('puhovik')
-  ))
+  // Проверяем, является ли текущая страница страницей статей или одной из статей
+  const articlePaths = [
+    '/neslivaetvodu',
+    '/negreetvodu',
+    '/protekaet',
+    '/silnoshumit',
+    '/nevkluchaetsa',
+    '/zavisaetnaprogramme',
+    '/neotjimaet',
+    '/nenabiraetvodu',
+    '/neotkrivaetsadverca',
+    '/nekrutitbaraban',
+    '/jirniepyatna',
+    '/jvachka',
+    '/vlapalisvkrov',
+    '/puhovik'
+  ]
+  const normalizedPath = router.pathname ? router.pathname.toLowerCase() : ''
+  const isArticlesPage = normalizedPath === '/articles' || normalizedPath.startsWith('/articles') || articlePaths.includes(normalizedPath)
 
   return (
     <>
@@ -106,8 +109,8 @@ const Header = () => {
                 </div>
               </Link>
               <Link href="/articles">
-                <div className={`${isArticlesPage ? 'frame1196-container105' : 'frame1196-container105-inactive'}`}>
-                  <span className="frame1196-text103">
+                <div className={`frame1196-container105-inactive`}>
+                  <span className={`frame1196-text103 ${isArticlesPage ? 'frame1196-text103-active' : ''}`}>
                     <span
                       dangerouslySetInnerHTML={{
                         __html: 'Статьи',
@@ -283,7 +286,7 @@ const Header = () => {
 
       <style jsx global>
         {`
-          /* Глобальные стили для принуждения цвета в sidebar */
+          /* Глобальные стили дл�� принуждения цвета в sidebar */
           .frame1196-sidebar-nav a {
             color: white !important;
             font-family: var(--font-nunito), sans-serif !important;
@@ -309,7 +312,7 @@ const Header = () => {
             .page-headertextwashermachine { margin-top: 66px !important; }
           }
 
-          /* Б��льшие экраны: нижний отступ заголовочного блока 54px (было 60) */
+          /* Б��льшие экраны: нижний отступ заголовочно��о блока 54px (было 60) */
           @media (min-width: 992px) {
             .page-headertextwashermachine { margin-bottom: 27px !important; }
           }
@@ -346,7 +349,13 @@ const Header = () => {
             font-size: 14px !important; /* на больших экранах уменьшить на 1 (было 15px) */
           }
 
-          /* На маленьких экранах уменьшить на 2 */
+          /* Make header 'Статьи' text blue on article pages */
+          .frame1196-text103-active {
+            color: #87ceeb !important;
+            font-weight: 500 !important;
+          }
+
+          /* На маленьких экра��ах уменьшить на 2 */
           @media (max-width: 767px) {
             .page-text19,
             .page-text20,
@@ -360,7 +369,7 @@ const Header = () => {
             }
           }
 
-          /* Переопред����ение отступов для RelatedArticles внутри page-left-main-box */
+          /* Переопред����ение отступов для RelatedArticles ��нутри page-left-main-box */
           .page-left-main-box .related-articles {
             margin-bottom: 30px !important;
             margin-top: var(--dl-layout-space-oneandhalfunits) !important;

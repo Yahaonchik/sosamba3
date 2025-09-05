@@ -10,7 +10,7 @@ const RELATED = [
   },
   {
     href: '/vlapalisvkrov',
-    title: 'Как удалить пятна крови с одежды без следов?',
+    title: 'Как удалить пятна крови с одежды без сле��ов?',
     image: '/100x100/krov.png',
     alt: 'Как удалить пятна крови с одежды'
   },
@@ -55,13 +55,13 @@ const RelatedArticles = () => {
         .thumb-wrap { width: 120px; height: 90px; border-radius: 10px; overflow: hidden; background: linear-gradient(45deg, #f0f4f7, #e9eef2); display: flex; align-items: center; justify-content: center; }
         .thumb-img { width: 100%; height: 100%; object-fit: cover; }
         .card-body { display: flex; align-items: center; }
-        .card-text { margin: 0; font-size: 0.98rem; line-height: 1.35; font-family: var(--font-nunito), sans-serif; }
+        .card-text { margin: 0; font-size: 0.92rem; line-height: 1.35; font-family: var(--font-nunito), sans-serif; font-weight: 400; }
         .related-card:hover .card-text { color: #4EC8ED; }
         @media (max-width: 480px) {
           .related-grid { grid-template-columns: 1fr; gap: 16px; }
           .related-card { grid-template-columns: 100px 1fr; padding: 12px; }
           .thumb-wrap { width: 100px; height: 76px; }
-          .card-text { font-size: 0.95rem; }
+          .card-text { font-size: 0.89rem; font-weight: 400; }
         }
       `}</style>
     </section>

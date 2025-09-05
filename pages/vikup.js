@@ -17,7 +17,7 @@ const Vikup = (props) => {
   const seoData = getSEOData('/vikup')
   const baseUrl = 'https://remstirmash.od.ua'
   const serviceData = getServiceData(
-    'Выкуп б/у стиральн��х машин',
+    'Выкуп б/у с��иральн��х машин',
     'Выкупаем б/у стиральные машины в Одессе дорого. Любые марки и состояние.',
     `${baseUrl}/vikup`
   )
@@ -57,7 +57,7 @@ const Vikup = (props) => {
                     />
                   </span>
                   <span className="page1-text16">
-                    — продайте нам и получите реальную выгоду!Мы покупаем любые
+                    — продайте нам и получите реальную выгоду! Мы покупаем любые
                     стиральные машины —
                   </span>
                   <span>
@@ -76,7 +76,7 @@ const Vikup = (props) => {
                       }}
                     />
                   </span>
-                  <span className="page1-text20">неисправные</span>
+                  <span className="page1-text20">неисправ��ы��</span>
                   <span>
                     ,
                     <span
@@ -96,7 +96,7 @@ const Vikup = (props) => {
                   </span>
                   <span className="page1-text24">
                     Оцениваем справедливо, забираем сами в удобное время,
-                    никаких хлопот с вашей стороны.
+                    никак��х хлопот с вашей стороны.
                   </span>
                   <span>
                     <span
@@ -109,7 +109,7 @@ const Vikup = (props) => {
               </div>
               <div className="page1-hero-image">
                 <img
-                  alt="мастер по ремонту стиральных машин жмет руку покупателю"
+                  alt="м��стер по ремонту стиральных машин жмет руку покупателю"
                   src="/vikupsochi-1500w.webp"
                   loading="lazy"
                   decoding="async"
@@ -166,7 +166,7 @@ const Vikup = (props) => {
               <div className="page1-container18">
                 <img alt="image" src="/ICONS/res3.svg" loading="lazy" className="page1-image4" />
                 <div className="page1-container19">
-                  <h3 className="page1-text31">Экономи�� времени</h3>
+                  <h3 className="page1-text31">Э��ономи�� времени</h3>
                   <svg
                     width="100%"
                     xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +198,7 @@ const Vikup = (props) => {
                     ></path>
                   </svg>
                   <p className="page1-text32">
-                    Мы сами приезжаем, аккуратно выносим
+                    Мы сам�� приезжаем, аккуратно выносим
                   </p>
                 </div>
               </div>
@@ -206,8 +206,7 @@ const Vikup = (props) => {
                 <img alt="image" src="/ICONS/zamena1.svg" loading="eager" className="page1-image5" />
                 <div className="page1-container21">
                   <h3 className="page1-text33">
-                    <span>Оплата наличными</span>
-                    <br></br>
+                    <span>Оплата<br/>наличными</span>
                   </h3>
                   <svg
                     width="100%"
@@ -735,7 +734,7 @@ const Vikup = (props) => {
             justify-content: center;
           }
           .page1-container13 {
-            gap: var(--dl-layout-space-twounits);
+            gap: calc(var(--dl-layout-space-twounits) - 10px);
             width: 416px;
             height: 100%;
             display: flex;
@@ -759,11 +758,11 @@ const Vikup = (props) => {
             max-width: 700px;
             text-align: center;
             font-family: var(--font-nunito);
-            line-height: 1.35;
+            line-height: 2.025;
           }
           .page1-text14 {
             color: #191818;
-            font-weight: 500;
+            font-weight: 600;
           }
           .page1-text15 {
             color: #58c3e8;
@@ -773,13 +772,13 @@ const Vikup = (props) => {
             color: #373737;
           }
           .page1-text18 {
-            font-weight: 500;
+            font-weight: 600;
           }
           .page1-text20 {
-            font-weight: 500;
+            font-weight: 600;
           }
           .page1-text22 {
-            font-weight: 500;
+            font-weight: 600;
           }
           .page1-text24 {
             color: #373737;
@@ -1005,8 +1004,8 @@ const Vikup = (props) => {
             font-size: 15px;
             max-width: 150px;
             font-style: normal;
-            max-height: 35px;
-            min-height: 35px;
+            max-height: none;
+            min-height: auto;
             font-family: var(--font-nunito);
             font-weight: 500;
             line-height: normal;
@@ -1720,7 +1719,7 @@ const Vikup = (props) => {
             .page1-container23 {
               width: 290px;
               max-width: 290px;
-              margin-bottom: 100px;
+              margin-bottom: 20px;
             }
             .page1-container24 {
               height: auto;
@@ -1739,7 +1738,7 @@ const Vikup = (props) => {
               max-width: 170px;
             }
             .page1-text42 {
-              font-size: 16px;
+              font-size: 17px;
               font-style: normal;
               font-weight: 400;
             }
@@ -1761,7 +1760,7 @@ const Vikup = (props) => {
               padding-left: 0px;
             }
             .page1-text45 {
-              font-size: 16px;
+              font-size: 17px;
               font-style: normal;
               font-weight: 400;
             }
@@ -1782,7 +1781,7 @@ const Vikup = (props) => {
               max-width: 170px;
             }
             .page1-text48 {
-              font-size: 16px;
+              font-size: 17px;
               font-style: normal;
               font-family: var(--font-nunito);
               font-weight: 400;
@@ -1795,6 +1794,20 @@ const Vikup = (props) => {
           .clickable-button:hover img { transform: rotate(15deg); filter: brightness(1.2); }
           .clickable-button img { transition: transform 0.2s ease, filter 0.2s ease; }
           .clickable-button:active { transform: translateY(0); }
+
+          /* Restore mobile sizes and constrain desktop-only increase */
+          @media (max-width: 767px) {
+            .page1-text42 { font-size: 14.5px !important; }
+            .page1-text45 { font-size: 14.5px !important; }
+            .page1-text48 { font-size: 14.5px !important; }
+            /* Reduce header labels by 1px on phones */
+            .page1-text41, .page1-text44, .page1-text47 { font-size: 20px !important; }
+          }
+
+          @media (min-width: 768px) {
+            .page1-text42, .page1-text45, .page1-text48 { font-size: 17px !important; }
+          }
+
         `}
       </style>
     </>

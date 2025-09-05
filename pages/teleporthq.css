@@ -564,6 +564,10 @@
   font-weight: 500;
   line-height: 2;
 }
+.vicetext strong { font-weight: 600; }
+
+/* Make first step strong bolder specifically for section id="1" on desktop */
+section[id="1"] .vicetext strong { font-weight: 700; }
  
 .zagolovkiskorobkoy {
   gap: var(--dl-layout-space-halfunit);
@@ -693,6 +697,9 @@
 }
  
 @media(max-width: 767px) {
+  /* Make first step strong a bit bolder on problem pages (section id="1") */
+  section[id="1"] .vicetext strong { font-weight: 500; }
+
   .thq-section-padding {
     padding: var(--dl-layout-space-threeunits);
   }
@@ -738,6 +745,7 @@
     line-height: normal;
     font-stretch: normal;
   }
+  .vicetext strong { font-weight: 500; }
 }
  
 @media(max-width: 479px) {

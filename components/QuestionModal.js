@@ -146,7 +146,7 @@ const QuestionModal = ({ isOpen, onClose }) => {
         .modal-close { background: none; border: none; font-size: 30px; cursor: pointer; color: #999; padding: 0; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.2s ease; }
         .modal-close:hover { background-color: #f5f5f5; color: #333; }
         .modal-body { flex: 1; display: flex; flex-direction: column; }
-        .modal-description { font-size: 16px; line-height: 1.6; color: #666; margin-bottom: 40px; font-family: var(--font-nunito), sans-serif; }
+        .modal-description { font-size: 18px; line-height: 1.6; color: #666; margin-bottom: 40px; font-family: var(--font-nunito), sans-serif; }
         .question-form { display: flex; flex-direction: column; gap: 25px; flex: 1; }
         .form-group { display: flex; flex-direction: column; }
         .form-input { padding: 20px; font-size: 18px; border: 2px solid #ddd; border-radius: 8px; background-color: #f9f9f9; transition: background-color 0.2s ease, border-color 0.2s ease; outline: none; font-family: var(--font-nunito), sans-serif; }

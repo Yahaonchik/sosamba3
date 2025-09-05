@@ -20,22 +20,25 @@ const MainFooter = () => {
     setIsModalOpen(false)
   }
 
-  // Проверяем, является ли текущая страница страницей статей или проблемы
-  const isArticlesPage = router.pathname === '/articles' || (router.pathname && (
-    router.pathname.includes('NESLIVAETIVODU') ||
-    router.pathname.includes('NEGREETIVODU') ||
-    router.pathname.includes('PROTEKAET') ||
-    router.pathname.includes('SILNOSHUMIT') ||
-    router.pathname.includes('NEVKLUCHAETSA') ||
-    router.pathname.includes('ZAVISAETNAPROGRAMME') ||
-    router.pathname.includes('NEOTJIMAET') ||
-    router.pathname.includes('NENABIRRAETVODU') ||
-    router.pathname.includes('NEOTKRIVATSADVERCA') ||
-    router.pathname.includes('jirniepyatna') ||
-    router.pathname.includes('jvachka') ||
-    router.pathname.includes('vlapalisvkrov') ||
-    router.pathname.includes('puhovik')
-  ))
+  // Проверяем, является ли текущая страница страницей статей или одной из статей
+  const articlePaths = [
+    '/neslivaetvodu',
+    '/negreetvodu',
+    '/protekaet',
+    '/silnoshumit',
+    '/nevkluchaetsa',
+    '/zavisaetnaprogramme',
+    '/neotjimaet',
+    '/nenabiraetvodu',
+    '/neotkrivaetsadverca',
+    '/nekrutitbaraban',
+    '/jirniepyatna',
+    '/jvachka',
+    '/vlapalisvkrov',
+    '/puhovik'
+  ]
+  const normalizedPath = router.pathname ? router.pathname.toLowerCase() : ''
+  const isArticlesPage = normalizedPath === '/articles' || normalizedPath.startsWith('/articles') || articlePaths.includes(normalizedPath)
 
   useEffect(() => {
     if (showMap) return
