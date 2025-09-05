@@ -29,7 +29,7 @@ export default function SiteMap() {}
 export async function getServerSideProps({ res }) {
   const sitemap = generateSiteMap()
   res.setHeader('Content-Type', 'application/xml')
-  res.setHeader('Cache-Control', 'public, s-maxage=3600, max-age=3600, stale-while-revalidate=86400')
+  res.setHeader('Cache-Control', 'no-cache, no-store, max-age=0')
   res.write(sitemap)
   res.end()
   return { props: {} }
