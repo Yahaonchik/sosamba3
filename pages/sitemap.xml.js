@@ -29,6 +29,7 @@ export default function SiteMap() {}
 export async function getServerSideProps({ res }) {
   const sitemap = generateSiteMap()
   res.setHeader('Content-Type', 'application/xml')
+  // Temporarily disable caching so Google sees latest sitemap during debugging
   res.setHeader('Cache-Control', 'no-cache, no-store, max-age=0')
   res.write(sitemap)
   res.end()
