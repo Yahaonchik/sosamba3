@@ -24,27 +24,27 @@ const Articles = (props) => {
   const closeQuestionModal = () => setIsQuestionModalOpen(false)
 
   const problemArticles = [
-    { title: 'Стиральная машина не сливает воду', href: '/neslivaetvodu', image: '/problems 2/11-300h.webp', alt: 'Стиральная машина не слива��т воду' },
+    { title: 'Стиральная машина не сливает воду', href: '/neslivaetvodu', image: '/problems 2/11-300h.webp', alt: 'Стиральная машина не сливает воду' },
     { title: 'Стиральная машина не греет воду', href: '/negreetvodu', image: '/problems 2/21-300h.webp', alt: 'Стиральная машина не нагревает воду' },
-    { title: 'Стиральная машина протекает', href: '/protekaet', image: '/problems 2/31-300h.webp', alt: 'Стир��льная машина протекает' },
-    { title: 'Стиральная машина шумит при отжиме', href: '/silnoshumit', image: '/problems/4-300h.webp', alt: 'Стиральн��я машина шумит при отжиме' },
+    { title: 'Стиральная машина протекает', href: '/protekaet', image: '/problems 2/31-300h.webp', alt: 'Стиральная машина протекает' },
+    { title: 'Стиральная машина шумит при отжиме', href: '/silnoshumit', image: '/problems/4-300h.webp', alt: 'Стиральная машина шумит при отжиме' },
     { title: 'Стиральная машина не включается', href: '/nevkluchaetsa', image: '/problems 2/51-300h.webp', alt: 'Стиральная машина не включается' },
-    { title: 'Стиральная машина зависает на программе', href: '/zavisaetnaprogramme', image: '/problems 2/61-300h.webp', alt: 'Стиральная машина зависает на про��рамме' },
+    { title: 'Стиральная машина зависает на программе', href: '/zavisaetnaprogramme', image: '/problems 2/61-300h.webp', alt: 'Стиральная машина зависает на программе' },
     { title: 'Стиральная машина не отжимает', href: '/neotjimaet', image: '/problems 2/71-300h.webp', alt: 'Стиральная машина не отжимает' },
-    { title: 'Стиральная машина не набирае�� воду', href: '/nenabiraetvodu', image: '/problems/8-300h.webp', alt: 'Стиральная машина не набирает воду' },
-    { title: 'У стиральной машины не открывается дверца', href: '/neotkrivaetsadverca', image: '/problems 2/91-300h.webp', alt: 'Не открывается дверца стиральной машины' },
+    { title: 'Стиральная машина не набирает воду', href: '/nenabiraetvodu', image: '/problems/8-300h.webp', alt: 'Стиральная машина не набирает воду' },
+    { title: 'У стиральной машины не открывается ��верца', href: '/neotkrivaetsadverca', image: '/problems 2/91-300h.webp', alt: 'Не открывается дверца стиральной машины' },
     { title: 'Стиральная машина не крутит барабан', href: '/nekrutitbaraban', image: '/problems/10-300h.webp', alt: 'Стиральная машина не крутит барабан' }
   ]
 
   const generalArticles = [
     { title: 'Как избавиться от жирных пятен на одежде в домашних условиях?', href: '/jirniepyatna', description: 'Практическая инструкция по удалению жирных пятен с разных тканей в домашних условиях', image: '/100x100/jir.png' },
-    { title: 'Как самостоятельно удалить жвачку с одежды?', href: '/jvachka', description: 'По��аговые способы и лайфхаки удаления застывшей жвачки с ткани', image: '/100x100/jvanik.png' },
-    { title: 'Как удалить пятна крови �� одежды без следов?', href: '/vlapalisvkrov', description: 'Советы по быстрому и безопасному выведению пятен крови', image: '/100x100/krov.png' },
-    { title: 'Как правильно стирать пуховик в автоматической стиральной машине?', href: '/puhovik', description: 'Руководство по стирке пуховиков: подготовка, выбор режима и моющего средств��', image: '/100x100/puhovik.png' }
+    { title: 'Как самостоятельно удалить жвачку с одежды?', href: '/jvachka', description: 'Пошаговые способы и лайфхаки удаления застывшей жвачки с ткани', image: '/100x100/jvanik.png' },
+    { title: 'Как удалить пятна крови с одежды без следов?', href: '/vlapalisvkrov', description: 'Советы по быстрому и безопасному выведению пятен крови', image: '/100x100/krov.png' },
+    { title: 'Ка�� правильно стирать пуховик в автоматической стиральной машине?', href: '/puhovik', description: 'Руководство по стирке пуховиков: подготовка, выбор режима и моющего средства', image: '/100x100/puhovik.png' }
   ]
 
   const seoData = getSEOData('/articles')
-  const baseUrl = 'https://remstirmash.od.ua'
+  const baseUrl = 'https://sosamba3.vercel.app'
 
   return (
     <>
@@ -62,7 +62,7 @@ const Articles = (props) => {
         <section className="articles-hero">
           <div className="articles-hero-content">
             <h1 className="articles-title"><span className="articles-title-blue">Полезные </span><span className="articles-title-black">статьи</span></h1>
-            <p className="articles-subtitle">Экспертные совет�� по ремонту стиральных машин и уходу за одеждой</p>
+            <p className="articles-subtitle">Экспертные советы по ремонту стиральных машин и уходу за одеждой</p>
           </div>
         </section>
 
@@ -71,7 +71,7 @@ const Articles = (props) => {
             <button className={`tab-button ${activeTab === 'care' ? 'active' : ''}`} onClick={() => setActiveTab('care')}>
               <div className="tab-content">
                 <h3 className="tab-title">Уход за одеждой</h3>
-                <p className="tab-subtitle">Практические советы по стирке и выведению разл��чных пятен</p>
+                <p className="tab-subtitle">Практические советы по стирке и выведению различных пятен</p>
               </div>
             </button>
             <button className={`tab-button ${activeTab === 'problems' ? 'active' : ''}`} onClick={() => setActiveTab('problems')}>

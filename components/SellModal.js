@@ -48,7 +48,7 @@ const SellModal = ({ isOpen, onClose }) => {
     const isValidPhone = rest.length === 9
     const fullPhone = `+380 ${rest}`
     if (!formData.name.trim() || !isValidPhone) {
-      setStatus('П��жалуйста, введите корректный номер в формате +380XXXXXXXXX и заполните все поля')
+      setStatus('Пожалуйста, введите корректный номер в формате +380XXXXXXXXX и заполните все поля')
       return
     }
     if (sending) return

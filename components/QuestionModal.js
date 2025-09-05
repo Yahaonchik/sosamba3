@@ -49,7 +49,7 @@ const QuestionModal = ({ isOpen, onClose }) => {
     const isValidPhone = rest.length === 9
     const fullPhone = `+380 ${rest}`
     if (!formData.question.trim() || !isValidPhone) {
-      setStatus('Пожалуйста, введите корректный номер в формате +380XXXXXXXXX и заполните все по��я')
+      setStatus('Пожалуйста, введите корректный номер в формате +380XXXXXXXXX и заполните все поля')
       return
     }
     if (sending) return

@@ -12,7 +12,7 @@ const AppComponent = (props) => {
               <span className="component-text2">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: 'Стиральная машин�� не сливает воду',
+                    __html: 'Стиральная машина не сливает воду',
                   }}
                 ></span>
               </span>

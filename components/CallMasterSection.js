@@ -10,7 +10,7 @@ const CallMasterSection = ({
     { icon: '/image%203823106.svg', number: PHONE_DISPLAY },
     { icon: '/image%203823107.svg', number: PHONE_DISPLAY_2 },
   ],
-  buttonText = 'Заказать ��астера',
+  buttonText = 'Заказать мастера',
 }) => {
   const toTelHref = (s) => {
     const digits = s.replace(/\D+/g, '');
@@ -33,7 +33,7 @@ const CallMasterSection = ({
 
       <h2 className="callout-title">{title}</h2>
       <p className="callout-text">
-        <span>Если вы выполнили ��се рекомендации, но проблема осталась — обратитесь в сервис&nbsp;</span>
+        <span>Если вы выполнили все рекомендации, но проблема осталась — обратитесь в сервис&nbsp;</span>
         <span className="company-quote">"</span>
         <span className="company-name">{companyName}</span>
         <span className="company-quote">"</span>
@@ -48,7 +48,7 @@ const CallMasterSection = ({
           {phones.map((p, idx) => (
             <div className="phone-item" key={idx}>
               <img alt="phone" src={p.icon} loading="lazy" className="phone-icon" />
-              <a href={toTelHref(p.number)} className="phone-number" aria-label={`Позвонить п�� номеру ${p.number}`}>{p.number}</a>
+              <a href={toTelHref(p.number)} className="phone-number" aria-label={`Позвонить по номеру ${p.number}`}>{p.number}</a>
             </div>
           ))}
         </div>

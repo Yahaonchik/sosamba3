@@ -9,7 +9,7 @@
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 # Production Domain (замените на ваш домен)
-NEXT_PUBLIC_DOMAIN=https://remstirmash.od.ua
+NEXT_PUBLIC_DOMAIN=https://sosamba3.vercel.app
 ```
 
 ## Как получить Google Analytics ID:

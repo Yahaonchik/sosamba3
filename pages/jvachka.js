@@ -16,7 +16,7 @@ const Page = () => {
   const closeModal = () => setIsModalOpen(false)
 
   const seoData = getSEOData('/jvachka')
-  const baseUrl = 'https://remstirmash.od.ua'
+  const baseUrl = 'https://sosamba3.vercel.app'
   const structuredData = getArticleStructuredData(
     'Как удалить жвачку с одежды',
     'Эффективные методы удаления жвачки с одежды: холод, тепло и мягкие растворители',

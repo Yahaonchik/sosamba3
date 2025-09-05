@@ -27,7 +27,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  // Проверяем, является ли текущая страница страницей статей или одной из статей
+  // Пров��ряем, является ли текущая страница страницей статей или одной из статей
   const articlePaths = [
     '/neslivaetvodu',
     '/negreetvodu',
@@ -122,7 +122,7 @@ const Header = () => {
             </div>
             <div className="frame1196-telephonadres">
               <div className="frame1196-container108">
-                <button type="button" aria-label={`Отк��ыть контакты ${PHONE_DISPLAY}`} className="phone-link" onClick={() => setPhoneOpen(true)}>
+                <button type="button" aria-label={`Открыть контакты ${PHONE_DISPLAY}`} className="phone-link" onClick={() => setPhoneOpen(true)}>
                   <img
                     alt="Позвонить"
                     src="/ICONS/dla%20hedera%20trubka.svg"
@@ -256,7 +256,7 @@ const Header = () => {
             </nav>
             <div className="frame1196-sidebar-contact">
               <div className="frame1196-sidebar-phones">
-                <button type="button" aria-label={`О��крыть контакты ${PHONE_DISPLAY}`} className="phone-link" onClick={() => setPhoneOpen(true)}>
+                <button type="button" aria-label={`Открыть контакты ${PHONE_DISPLAY}`} className="phone-link" onClick={() => setPhoneOpen(true)}>
                   <img
                     alt="Позвонить"
                     src="/ICONS/dla%20hedera%20trubka.svg"
@@ -299,7 +299,7 @@ const Header = () => {
             color: #87ceeb !important;
           }
 
-          /* Синхронизированные отступы заголовков статей с контейнером "Полезные статьи" */
+          /* Си��хронизированные отступы заголовков статей с контейнером "Полезные статьи" */
           .page-main { padding-top: 0 !important; }
           .page-headertextwashermachine { margin-top: 24px !important; padding-top: 0 !important; }
           .page-text10 { margin-top: 0 !important; }

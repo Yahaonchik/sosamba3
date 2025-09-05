@@ -15,9 +15,9 @@ const Vikup = (props) => {
   const closeSellModal = () => setIsSellModalOpen(false)
 
   const seoData = getSEOData('/vikup')
-  const baseUrl = 'https://remstirmash.od.ua'
+  const baseUrl = 'https://sosamba3.vercel.app'
   const serviceData = getServiceData(
-    'Выкуп б/у с��иральн��х машин',
+    'Выкуп б/у стиральнх машин',
     'Выкупаем б/у стиральные машины в Одессе дорого. Любые марки и состояние.',
     `${baseUrl}/vikup`
   )
@@ -76,7 +76,7 @@ const Vikup = (props) => {
                       }}
                     />
                   </span>
-                  <span className="page1-text20">неисправ��ы��</span>
+                  <span className="page1-text20">неисправные</span>
                   <span>
                     ,
                     <span
@@ -96,7 +96,7 @@ const Vikup = (props) => {
                   </span>
                   <span className="page1-text24">
                     Оцениваем справедливо, забираем сами в удобное время,
-                    никак��х хлопот с вашей стороны.
+                    никаких хлопот с вашей стороны.
                   </span>
                   <span>
                     <span
@@ -109,7 +109,7 @@ const Vikup = (props) => {
               </div>
               <div className="page1-hero-image">
                 <img
-                  alt="м��стер по ремонту стиральных машин жмет руку покупателю"
+                  alt="мастер по ремонту стиральных машин жмет руку покупателю"
                   src="/vikupsochi-1500w.webp"
                   loading="lazy"
                   decoding="async"
@@ -127,7 +127,7 @@ const Vikup = (props) => {
               <div className="page1-container16">
                 <img alt="image" src="/ICONS/23222.svg" loading="lazy" className="page1-image3" />
                 <div className="page1-container17">
-                  <h3 className="page1-text29">Вме��то мусора – польза</h3>
+                  <h3 className="page1-text29">Вместо мусора - польза</h3>
                   <svg
                     width="100%"
                     xmlns="http://www.w3.org/2000/svg"
@@ -159,14 +159,14 @@ const Vikup = (props) => {
                     ></path>
                   </svg>
                   <p className="page1-text30">
-                    Мы вык��пим вашу машинку и используем её на благо другим
+                    Мы выкупим вашу машинку и используем её на благо другим
                   </p>
                 </div>
               </div>
               <div className="page1-container18">
                 <img alt="image" src="/ICONS/res3.svg" loading="lazy" className="page1-image4" />
                 <div className="page1-container19">
-                  <h3 className="page1-text31">Э��ономи�� времени</h3>
+                  <h3 className="page1-text31">Экономия времени</h3>
                   <svg
                     width="100%"
                     xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +198,7 @@ const Vikup = (props) => {
                     ></path>
                   </svg>
                   <p className="page1-text32">
-                    Мы сам�� приезжаем, аккуратно выносим
+                    Мы сами приезжаем, аккуратно выносим
                   </p>
                 </div>
               </div>

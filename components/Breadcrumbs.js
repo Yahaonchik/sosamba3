@@ -30,7 +30,7 @@ const Breadcrumbs = ({ customItems = null, style = 'default', className = '' }) 
       '/neslivaetvodu': 'Стиральная машина не сливает воду',
       '/negreetvodu': 'Стиральная машина не греет воду',
       '/protekaet': 'Стиральная машина протекает',
-      '/silnoshumit': 'Стиральная машина шумит при отжиме',
+      '/silnoshumit': 'Стиральная машин�� шумит при отжиме',
       '/nevkluchaetsa': 'Стиральная машина не включается',
       '/zavisaetnaprogramme': 'Стиральная машина зависает на программе',
       '/neotjimaet': 'Стиральная машина не отжимает',
@@ -62,7 +62,7 @@ const Breadcrumbs = ({ customItems = null, style = 'default', className = '' }) 
 
   const breadcrumbs = getBreadcrumbs()
 
-  const baseUrl = 'https://remstirmash.od.ua'
+  const baseUrl = 'https://sosamba3.vercel.app'
   const itemListElement = breadcrumbs.map((item, index) => ({
     '@type': 'ListItem',
     position: index + 1,
