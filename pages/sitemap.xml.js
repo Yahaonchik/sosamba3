@@ -1,7 +1,5 @@
 import { seoConfig } from '../utils/seoConfig'
 
-import { seoConfig } from '../utils/seoConfig'
-
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sosamba3.vercel.app'
 
 function generateSiteMap() {
