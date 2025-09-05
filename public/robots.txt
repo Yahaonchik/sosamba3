@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow:
 
-Sitemap: https://remstirmash.od.ua/sitemap.xml
+Sitemap: https://sosamba3.vercel.app/sitemap.xml
