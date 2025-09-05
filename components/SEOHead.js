@@ -34,7 +34,7 @@ const SEOHead = ({
 
   // Определяем robots: из пропса, из seoConfig по текущему пути, иначе индексируем
   const routeSEO = getSEOData(router.pathname)
-  const finalRobots = robots || (routeSEO && routeSEO.robots) || 'noindex, follow'
+  const finalRobots = robots || (routeSEO && routeSEO.robots) || 'index, follow'
 
   // Проверка наличия типа в переданных структурированных данных (объект или массив)
   const hasType = (data, type) => {
