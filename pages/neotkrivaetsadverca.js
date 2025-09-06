@@ -13,7 +13,7 @@ const Page = () => {
   const closeModal = () => setIsModalOpen(false)
 
   const seoData = getSEOData('/neotkrivaetsadverca')
-  const baseUrl = 'https://sosamba3.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://remont-stiralok.vercel.app'
   const structuredData = getProblemPageStructuredData(
     'Ремонт заблокированной дверцы стиральной машины',
     'Профессиональный ремонт заблокированной дверцы стиральной машины в Одессе. Ремонт замка люка, разблокировка.',

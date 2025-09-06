@@ -44,7 +44,7 @@ const Articles = (props) => {
   ]
 
   const seoData = getSEOData('/articles')
-  const baseUrl = 'https://sosamba3.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://remont-stiralok.vercel.app'
 
   return (
     <>

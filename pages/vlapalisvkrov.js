@@ -13,7 +13,7 @@ const Page = () => {
   const closeModal = () => setIsModalOpen(false)
 
   const seoData = getSEOData('/vlapalisvkrov')
-  const baseUrl = 'https://sosamba3.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://remont-stiralok.vercel.app'
   const structuredData = getArticleStructuredData(
     'Как удалить пятна крови с одежды',
     'Как быстро и аккуратно вывести пятна крови с разных тканей, не повредив их',

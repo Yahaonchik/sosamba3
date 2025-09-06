@@ -47,7 +47,7 @@ import { getProblemPageStructuredData } from '../utils/structuredData'`
     /const Page = \(props\) => {\s*return \(/,
     `const Page = (props) => {
   const seoData = getSEOData('${pageKey}')
-  const baseUrl = 'https://sosamba3.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://remont-stiralok.vercel.app'
   const structuredData = getProblemPageStructuredData(
     seoData.h1,
     seoData.description,

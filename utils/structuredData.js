@@ -1,5 +1,7 @@
 // Структурированные данные для локального бизнеса
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://remont-stiralok.vercel.app'
+
 // Базовая информация о компании
 export const getLocalBusinessData = (currentUrl = '') => {
   return {
@@ -10,8 +12,8 @@ export const getLocalBusinessData = (currentUrl = '') => {
     "url": currentUrl,
     "telephone": "+380984671352",
     "email": "remstirmash@gmail.com",
-    "image": "https://sosamba3.vercel.app/logo.jpg",
-    "logo": "https://sosamba3.vercel.app/logo.jpg",
+    "image": `${BASE_URL}/logo.jpg`,
+    "logo": `${BASE_URL}/logo.jpg`,
     "priceRange": "$$",
     "paymentAccepted": "наличные, банковская карта",
     "currenciesAccepted": "UAH",
@@ -179,8 +181,8 @@ export const getOrganizationData = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "РемСтирМаш",
-    "url": "https://sosamba3.vercel.app",
-    "logo": "https://sosamba3.vercel.app/logo.jpg",
+    "url": BASE_URL,
+    "logo": `${BASE_URL}/logo.jpg`,
     "contactPoint": [
       {
         "@type": "ContactPoint",

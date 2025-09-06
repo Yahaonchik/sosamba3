@@ -18,7 +18,7 @@ const Page = (props) => {
   const closeModal = () => setIsModalOpen(false)
   
   const seoData = getSEOData('/nevkluchaetsa')
-  const baseUrl = 'https://sosamba3.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://remont-stiralok.vercel.app'
   const structuredData = getProblemPageStructuredData(
     'Ремонт стиральной машины которая не включается',
     'Профессиональный ремонт стиральных машин которые не включаются в Одессе. Диагностика блока питания, ремонт управления.',
@@ -36,7 +36,7 @@ const Page = (props) => {
   const title = `<span class="page-text11">Стиральная машина не включается: —</span><span class="page-text12"> </span><span class="page-text13">что делать?</span>`
 
   const anchors = {
-    title: "Стиральная машина не включается:",
+    title: "Стиральная м��шина не включается:",
     items: [
       { icon: '/external/vector8669-r6fr.svg', href: '#1', text: '1. Что делать, если машина не включается?' },
       { icon: '/vector.svg', href: '#2', text: 'Основные причины поломки:' },
@@ -168,7 +168,7 @@ const Page = (props) => {
 
               <p>
                 <strong>3. Осмотрите дверцу.</strong><br />
-                Откройте люк и закройте его заново до характерного щелчка. Иногда простое неплотное закрытие блокирует пуск. Проверьте, не мешают ли защёлке посторонние предметы или грязь.
+                Откройте люк и закройте его занов�� до характерного щелчка. Иногда простое неплотное закрытие блокирует пуск. Проверьте, не мешают ли защёлке посторонние предметы или грязь.
               </p>
 
               <p>

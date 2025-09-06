@@ -203,7 +203,7 @@ const Frame1196 = (props) => {
   }, [showReviews])
 
   const seoData = getSEOData('/')
-  const baseUrl = 'https://sosamba3.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://remont-stiralok.vercel.app'
   const structuredData = getMainPageStructuredData(baseUrl)
 
   return (
@@ -419,7 +419,7 @@ const Frame1196 = (props) => {
             </Link>
             <a href="/nekrutitbaraban" className="frame1196-container122">
               <p className="frame1196-text121">
-                Стиральная машина не крутит барабан
+                Стиральная машина не крутит бараб��н
               </p>
               <div className="frame1196-arrow19">
                 <svg
@@ -445,7 +445,7 @@ const Frame1196 = (props) => {
             <span className="frame1196-text125"></span>
             <span className="frame1196-text126">
                Мы заботимся о надёжной работе вашей техники во всех уголках
-              Одессы.
+              Од��ссы.
             </span>
             <br className="frame1196-text127" />
             <span className="frame1196-text128">
@@ -794,7 +794,7 @@ const Frame1196 = (props) => {
                   <span className="frame1196-text147">2</span>
                 </div>
                 <span className="frame1196-text148">
-                  Диагностика оборудования (при ремонте)
+                  Диагностика обору��ования (при ремонте)
                 </span>
               </div>
               <div className="frame1196-container139">
@@ -2526,7 +2526,7 @@ const Frame1196 = (props) => {
                 <p className="frame1196-text225">
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: 'Квалифицированные специалисты, которые знают своё дело.',
+                      __html: 'Квалифицированные специалисты, которые знают с��оё дело.',
                     }}
                   ></span>
                 </p>
@@ -3039,7 +3039,7 @@ const Frame1196 = (props) => {
         <div className="frame1196-container206">
           <div className="frame1196-container207">
             <h2 className="frame1196-text238">
-              <span>Ответы на часто задаваемые вопросы!</span>
+              <span>Ответы на ча��то задаваемые вопросы!</span>
             </h2>
           </div>
           <svg
@@ -3249,7 +3249,7 @@ const Frame1196 = (props) => {
                 <p className="frame1196-text244">
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: 'Диагностика стоит 200 гривен. При согласии на ремонт стоимость диагоностики засчитывается в общую сумму работ. Выезд мастера бесплатный',
+                      __html: 'Диагностика стоит 200 гривен. При ��огласии на ремонт стоимость диагоностики засчитывается в общую сумму работ. Выезд мастера бесплатный',
                     }}
                   ></span>
                 </p>
@@ -3801,7 +3801,7 @@ const Frame1196 = (props) => {
               className="frame1196-frame10702"
             />
             <p className="frame1196-text278">
-                Я считаю это победа над стиральной машиной, которой 12 лет))  Очень круто!! Благодарю!! Она пала в руки мастера и отдалась ему полностью, а не стала брыкаться. не знаю, что он там с ней делал, но сейчас она как шелковая стирает мой ситцевое кружевное белье&lt;3
+                Я считаю это победа над стиральной машиной, которой 12 лет))  Очень круто!! Благодарю!! Она пала в руки мастера и отдалась ему ��олностью, а не стала брыкаться. не знаю, что он там с ней делал, но сейчас она как шелковая стирает мой ситцевое кружевное белье&lt;3
             </p>
             <svg
               width="330"
@@ -4165,7 +4165,7 @@ const Frame1196 = (props) => {
             text-decoration: none;
           }
 
-          /* ��ерный цвет для заг��ловка ког��а нет фо��овой ��артинки (на мобильных эк��а����ах) */
+          /* ��ерны�� цвет для заг��ловка ког��а нет фо��овой ��артинки (на мобильных эк��а����ах) */
           @media (max-width: 767px) {
             .frame1196-text108 {
               color: var(--dl-color-theme-neutral-dark);
@@ -11839,7 +11839,7 @@ const Frame1196 = (props) => {
             transform: translateY(0) !important;
           }
 
-          /* ��лоба���ьные hover эффекты для Blue1 и Blue2 ко��понентов */
+          /* ��лоба���ьные hover эффекты для Blue1 и Blue2 ��о��понентов */
           :global(.blue1-container4),
           :global(.blue2-container4) {
             cursor: pointer !important;
